@@ -2,7 +2,19 @@
 
 Tracewright is not designed to expose people. It is designed to slow down premature judgment.
 
-This prototype helps reviewers inspect AI-mediated or potentially AI-mediated text without reducing the question to a detector verdict. It organizes evidence, uncertainty, alternatives, provenance disclosures, claims, and follow-up questions so that a human reviewer can reason more carefully.
+This prototype helps reviewers inspect AI-mediated or potentially AI-mediated text without reducing the question to a detector verdict. It organizes evidence, uncertainty, alternatives, provenance disclosures, and follow-up questions so that a human reviewer can reason more carefully.
+
+## Intended Workflow
+
+Tracewright is designed for a human-in-the-loop review flow:
+
+1. A reviewer gathers one document or a sequence of related narrative materials.
+2. The reviewer provides the materials to an AI assistant or analysis pipeline.
+3. The AI segments the materials, extracts claims, identifies evidence, records uncertainty, and proposes alternative explanations.
+4. The structured result is loaded into a dashboard like this one.
+5. A human reviewer inspects the Summary, Claims, Timeline, Evidence, and Source Inventory before deciding what to verify, ask, ignore, or escalate.
+
+The intended output is not a verdict. It is a review map.
 
 ## What This Is
 
@@ -17,12 +29,39 @@ This prototype helps reviewers inspect AI-mediated or potentially AI-mediated te
 - It does not identify whether a person used AI.
 - It does not produce authenticity scores.
 - It does not replace consent, context, or human judgment.
+- It is not a hosted analysis platform.
+- It does not currently include document upload, storage, or API-backed analysis.
 
 ## Demo
 
 Open `index.html` in a browser. The same demo is also available at `demo/index.html`.
 
-The demo uses synthetic review materials only. The Summary tab includes a review guide, texture axes, review lanes, and an attention mix so that the tool is framed as narrative-material review rather than AI detection. Claims are separated from authorship/mediation signals because factual reliability and AI mediation are different review questions.
+The demo uses synthetic review materials only. The cases are designed to show how stable human texture, cross-language influence, editorial polish, source grounding, and claim reliability can be separated during review. The Summary tab includes a review guide, texture axes, review lanes, and an attention mix so that the tool is framed as narrative-material review rather than AI detection.
+
+## Reproducing the Method Locally
+
+This repository is intentionally a static public demo, not a free hosted service. A Codex or LLM-assisted user can still reproduce the workflow locally by:
+
+1. Keeping private source documents outside the public repository.
+2. Asking an AI assistant to analyze those documents using the methodology in `docs/methodology.md`.
+3. Converting the analysis into structured case data: materials, claims, evidence cards, review lanes, and summary posture.
+4. Replacing the synthetic demo data in `index.html` or adapting the UI to load a local JSON file.
+5. Reviewing and correcting the AI output manually before taking any action.
+
+This keeps the method reproducible without requiring the project owner to host private documents or provide free analysis infrastructure.
+
+## Future Product Shape
+
+A full product would need more than this repository:
+
+- document upload and text extraction
+- local or server-side storage
+- an API-backed analysis layer
+- structured JSON output
+- reviewer editing and audit logs
+- privacy, retention, and consent controls
+
+The current repository demonstrates the review model and interface logic; it does not provide that backend.
 
 ## Core Review Lanes
 
