@@ -77,6 +77,10 @@ A full product would need more than this repository:
 
 The current repository demonstrates the review model and interface logic; it does not provide that backend.
 
+## AI Analysis Instructions
+
+See `docs/ai-analysis-instructions.md` for prompt guidance when asking a local AI assistant to prepare correspondence, newsletter/article, or academic paper material for the dashboard.
+
 ## Core Review Lanes
 
 - **Authorship / Mediation**: wording, style, AI/editorial polish, continuity, and final-surface mediation.
@@ -92,5 +96,6 @@ The tool is built around review posture, not verdicts. Labels such as "segment-l
 - `index.html`: public synthetic demo for GitHub Pages.
 - `demo/index.html`: duplicate local demo entry point.
 - `docs/methodology.md`: method and review model.
+- `docs/ai-analysis-instructions.md`: prompt guidance for local AI-assisted analysis.
 - `docs/ethics.md`: privacy, consent, and misuse boundaries.
 - `LICENSE`: initial open license.
