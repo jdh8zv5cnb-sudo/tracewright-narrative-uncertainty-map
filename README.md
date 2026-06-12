@@ -119,6 +119,10 @@ The current repository demonstrates the review model and interface logic; it doe
 
 See `docs/ai-analysis-instructions.md` for prompt guidance when asking a local AI assistant to prepare correspondence, newsletter/article, or academic paper material for the dashboard.
 
+## OECD.AI Catalogue Submission Draft
+
+See `docs/oecd-ai-catalogue-submission-draft.md` for a draft submission text and categorization notes for the OECD.AI Catalogue of Tools & Metrics for Trustworthy AI.
+
 ## Core Review Lanes
 
 - **Authorship / Mediation**: wording, style, AI/editorial polish, continuity, and final-surface mediation.
