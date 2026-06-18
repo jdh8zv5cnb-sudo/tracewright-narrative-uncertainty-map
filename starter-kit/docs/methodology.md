@@ -6,11 +6,13 @@ Tracewright maps uncertainty in text review. It treats AI mediation as one possi
 
 The expected workflow is:
 
-1. **Input**: one narrative document or a bounded sequence of related materials.
-2. **AI-assisted structuring**: an AI assistant segments the text, extracts claims, identifies style and mediation signals, preserves source excerpts, and proposes alternative explanations.
-3. **Dashboard mapping**: the structured output is loaded into a review dashboard.
-4. **Human review**: the reviewer inspects the Summary, Claims, Evidence, Timeline, and Source Inventory.
-5. **Action decision**: the reviewer chooses what to verify, ask, ignore, monitor, or escalate.
+1. **Review intake**: the reviewer chooses the review mode, purpose, known provenance, constraints, and what should not be concluded.
+2. **Input**: one narrative document or a bounded sequence of related materials.
+3. **AI-assisted structuring**: an AI assistant segments the text, extracts claims, identifies style and mediation signals, preserves source excerpts, and proposes alternative explanations.
+4. **Refinement**: the reviewer asks follow-up questions and corrects weak or overbroad AI analysis.
+5. **Dashboard mapping**: the structured output is loaded into a review dashboard.
+6. **Human review**: the reviewer inspects the Summary, Claims, Evidence, Timeline, and Source Inventory.
+7. **Action decision**: the reviewer chooses what to verify, ask, ignore, monitor, or escalate.
 
 The method assumes that AI can help organize evidence, but the human reviewer remains responsible for judgment.
 
@@ -62,6 +64,21 @@ Useful review questions include:
 - Are limitations disclosed or minimized?
 
 Document-type presets should guide the AI prompt before analysis begins.
+
+## Review Intake
+
+Tracewright works best when the reviewer tells the AI what kind of review is needed before analysis begins. The reviewer should state:
+
+- primary review mode
+- secondary review mode, if any
+- material type
+- review purpose
+- known provenance or workflow
+- known gaps
+- what the AI must not conclude
+- output format needed
+
+If the reviewer does not provide enough context, the AI should ask clarifying questions before analyzing. A generic analysis can miss the user's real purpose and may overemphasize the wrong signals.
 
 ## Suggested Structured Output
 

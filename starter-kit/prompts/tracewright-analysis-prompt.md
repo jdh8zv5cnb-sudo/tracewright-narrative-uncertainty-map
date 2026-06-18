@@ -12,6 +12,12 @@ Tracewright is not an AI detector. Do not decide whether the material was writte
 Material type:
 [correspondence / article / newsletter / academic paper / public narrative dossier / art provenance file / historical record set / other]
 
+Primary review mode:
+[Claim and Fact Consistency / Academic Review / Correspondence or Personal Narrative Continuity / Authorship or Mediation Workflow / Provenance or Source-Role Review / other]
+
+Secondary review mode, if any:
+[optional]
+
 Review purpose:
 [What I want to understand or decide after review]
 
@@ -78,6 +84,7 @@ Rules:
 - Preserve exact source excerpts where possible.
 - Keep reader intuition separate from evidence.
 - Keep authorship/mediation questions separate from factual reliability.
+- Follow the chosen review mode. If the review purpose is unclear, ask clarifying questions before analyzing.
 - Do not collapse company pages, third-party reporting, legal material, personal statements, and later interpretation into one voice.
 - Do not treat polished prose as proof of AI authorship.
 - Do not treat rough prose as proof of human authorship.

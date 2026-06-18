@@ -73,7 +73,7 @@ Download the local starter kit here:
 
 https://ayakoredon.github.io/tracewright-narrative-uncertainty-map/downloads/tracewright-narrative-starter-kit.zip
 
-The starter kit includes a static dashboard, AI analysis prompt, case-data template, methodology notes, and ethics guidance. It is designed for local review workflows where users analyze their own private materials with their own AI assistant or local process.
+The starter kit includes a static dashboard, review-intake worksheet, mode-specific prompt snippets, AI analysis prompt, refinement prompt, case-data template, methodology notes, and ethics guidance. It is designed for local review workflows where users analyze their own private materials with their own AI assistant or local process.
 
 ## Demo Cases
 
@@ -107,6 +107,8 @@ For example:
 - newsletter or article review may emphasize editorial polish, source-backed details, translation workflow, institutional claims, and public-facing accuracy
 - academic paper review may emphasize research claims, methodology, sample description, evidence strength, citation use, limitations, and overgeneralization
 - art-provenance review may emphasize source-role boundaries, attribution versus ownership history, material-analysis limits, catalogue or diary mismatches, wartime gaps, and archival silence
+
+The starter kit includes a review-intake worksheet for choosing a primary review mode before analysis. Users should tell their AI whether they want claim/fact consistency review, academic review, correspondence continuity review, authorship/mediation workflow review, provenance/source-role review, or another mode. If the goal is unclear, the AI should ask clarifying questions before producing a map.
 
 The dashboard is only as useful as the structured analysis that feeds it. AI output should be treated as a draft review map, not as ground truth.
 

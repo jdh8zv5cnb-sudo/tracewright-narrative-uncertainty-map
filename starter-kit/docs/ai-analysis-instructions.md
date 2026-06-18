@@ -2,6 +2,20 @@
 
 Use these instructions when asking an AI assistant to prepare material for a Tracewright-style dashboard.
 
+## Before Analysis
+
+The reviewer should state the review mode before providing or analyzing materials. If the review purpose is unclear, the AI assistant should ask clarifying questions rather than producing a generic analysis.
+
+Common review modes:
+
+- Claim and Fact Consistency
+- Academic Review
+- Correspondence / Personal Narrative Continuity
+- Authorship / Mediation Workflow
+- Provenance / Source-Role Review
+
+The same document set may need different treatment depending on the selected mode. For example, an academic paper can be reviewed for publication quality, citation support, argument structure, or AI-mediated prose; these are related but not identical tasks.
+
 ## General Instruction
 
 Analyze the provided document or bounded document sequence as review material. Do not decide whether it is AI-generated. Instead, create a structured uncertainty map for human review.
@@ -72,4 +86,3 @@ For academic papers, do not focus first on whether the prose sounds AI-polished.
 ## Required Caution
 
 The quality of the result depends on the AI model, prompt, extraction quality, and reviewer calibration. Treat the output as a draft review map. A human reviewer must inspect source excerpts and correct the analysis before relying on it.
-

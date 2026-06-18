@@ -12,6 +12,15 @@ Tracewright is not designed to expose people. It is designed to slow down premat
 - `prompts/tracewright-analysis-prompt.md`  
   A reusable prompt for asking your own AI assistant to prepare a Tracewright-style review map.
 
+- `prompts/review-intake-worksheet.md`
+  A worksheet for choosing the review mode and telling your AI what kind of analysis you need before uploading or pasting materials.
+
+- `prompts/mode-specific-prompt-snippets.md`
+  Short prompt additions for common review modes.
+
+- `prompts/refinement-feedback-prompt.md`
+  A follow-up prompt for improving the first AI output.
+
 - `templates/case-data-template.json`  
   A structured case-data template showing the fields used by the dashboard.
 
@@ -27,10 +36,12 @@ Tracewright is not designed to expose people. It is designed to slow down premat
 ## Basic Workflow
 
 1. Keep private source materials on your own machine or in your own secure workspace.
-2. Ask your preferred AI assistant to analyze a bounded document set using the prompt in `prompts/tracewright-analysis-prompt.md`.
-3. Review the AI output yourself. Correct source excerpts, claims, evidence cards, and uncertainty labels.
-4. Adapt the structured output into the shape shown in `templates/case-data-template.json`.
-5. Use the dashboard as a review map, not as a verdict.
+2. Fill out `prompts/review-intake-worksheet.md` so your AI assistant knows the review mode, purpose, limits, and known context.
+3. Ask your preferred AI assistant to analyze a bounded document set using `prompts/tracewright-analysis-prompt.md` plus the appropriate mode snippet.
+4. Use `prompts/refinement-feedback-prompt.md` to challenge and improve the first output.
+5. Review the AI output yourself. Correct source excerpts, claims, evidence cards, and uncertainty labels.
+6. Adapt the structured output into the shape shown in `templates/case-data-template.json`.
+7. Use the dashboard as a review map, not as a verdict.
 
 ## What This Kit Does Not Do
 
@@ -39,6 +50,18 @@ Tracewright is not designed to expose people. It is designed to slow down premat
 - It does not store your private materials.
 - It does not detect whether a text was written by AI.
 - It does not replace legal, academic, editorial, provenance, or professional review.
+
+## Choosing a Review Mode
+
+Tracewright works best when the AI knows what kind of review you want. Before analysis, choose a primary mode:
+
+- Claim and Fact Consistency
+- Academic Review
+- Correspondence / Personal Narrative Continuity
+- Authorship / Mediation Workflow
+- Provenance / Source-Role Review
+
+If more than one mode applies, choose one primary mode and one secondary mode. The same source material can produce different useful maps depending on the review purpose.
 
 ## How To Open the Dashboard
 
