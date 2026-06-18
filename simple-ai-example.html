@@ -44,11 +44,44 @@
       flex-wrap: wrap;
       margin: 14px 0 24px;
     }
-    .log {
+    .chat-log {
+      display: grid;
+      gap: 18px;
       border: 1px solid #d9d0c3;
       background: #fffdf8;
       padding: 18px;
-      overflow-x: auto;
+    }
+    .turn {
+      width: min(760px, 100%);
+    }
+    .turn.user { justify-self: end; }
+    .turn.ai { justify-self: start; }
+    .speaker {
+      margin: 0 0 6px;
+      color: #6b6258;
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+    .message {
+      border: 1px solid #d9d0c3;
+      border-radius: 8px;
+      background: #fffaf0;
+      padding: 14px 16px;
+    }
+    .user .message {
+      background: #eef4f5;
+    }
+    .attachment {
+      display: inline-block;
+      border: 1px solid #d9d0c3;
+      border-radius: 6px;
+      background: #fffdf8;
+      padding: 4px 8px;
+      margin: 0 0 10px;
+      color: #315f72;
+      font-size: 13px;
+      font-weight: 700;
     }
     pre {
       margin: 0;
@@ -80,23 +113,21 @@
       <a href="https://github.com/ayakoredon/tracewright-narrative-uncertainty-map">View on GitHub</a>
     </div>
 
-    <section class="log" aria-label="Plain Markdown-style AI chat example">
-<pre>[User attaches file]
-USE_THIS_WITH_YOUR_AI.md
+    <section class="chat-log" aria-label="Plain Markdown-style AI chat example">
+      <article class="turn user">
+        <p class="speaker">User</p>
+        <div class="message">
+          <div class="attachment">Attached: USE_THIS_WITH_YOUR_AI.md</div>
+          <p>Please read the attached Tracewright file first.</p>
+          <p>Before I upload any documents, please help me check whether this AI environment is appropriate for my files, ask what kind of review I want, and guide me step by step.</p>
+          <p>I do not want an AI-detector verdict. I want a careful uncertainty review map.</p>
+        </div>
+      </article>
 
-[User]
-Please read the attached Tracewright file first.
-
-Before I upload any documents, please help me check whether this AI environment
-is appropriate for my files, ask what kind of review I want, and guide me step
-by step.
-
-I do not want an AI-detector verdict. I want a careful uncertainty review map.
-
----
-
-[AI]
-I can read the Tracewright instruction file.
+      <article class="turn ai">
+        <p class="speaker">AI</p>
+        <div class="message">
+<pre>I can read the Tracewright instruction file.
 
 Before you upload review documents, please pause and check whether this AI
 environment is appropriate for the material.
@@ -117,27 +148,24 @@ Please choose a primary review mode:
 - Other / Custom
 
 What kind of documents do you want to review, and what question are you trying
-to answer?
+to answer?</pre>
+        </div>
+      </article>
 
----
+      <article class="turn user">
+        <p class="speaker">User</p>
+        <div class="message">
+          <div class="attachment">Attached: thesis_excerpt.txt</div>
+          <p>I want an academic review for a document.</p>
+          <p>I want to check whether this paper is strong enough for a thesis-level submission.</p>
+          <p>Please be clear and strict about the philosophical writing. It was fully written by a human, so do not focus on AI authorship. Focus on logical consistency.</p>
+        </div>
+      </article>
 
-[User attaches file]
-thesis_excerpt.txt
-
-[User]
-I want an academic review for a document.
-
-I want to check whether this paper is strong enough for a thesis-level
-submission.
-
-Please be clear and strict about the philosophical writing. It was fully
-written by a human, so do not focus on AI authorship. Focus on logical
-consistency.
-
----
-
-[AI]
-Understood. I will use Academic Review as the primary mode.
+      <article class="turn ai">
+        <p class="speaker">AI</p>
+        <div class="message">
+<pre>Understood. I will use Academic Review as the primary mode.
 
 Because you have stated that the text is human-written, I will lower the
 priority of authorship / AI-texture analysis and focus on argument structure,
@@ -146,12 +174,14 @@ concept stability, source support, and logical transitions.
 If the document is long, I recommend beginning with the smallest useful section:
 the introduction, thesis statement, and one core argument section.
 
-I will treat the result as a draft review map, not final academic judgment.
+I will treat the result as a draft review map, not final academic judgment.</pre>
+        </div>
+      </article>
 
----
-
-[AI returns Markdown]
-
+      <article class="turn ai">
+        <p class="speaker">AI returns Markdown</p>
+        <div class="message">
+<pre>
 # Tracewright Academic Review Map
 
 ## 1. Review Setup
@@ -248,6 +278,8 @@ own account of differend, plurality, and justice.
 The user should now check the AI's source references, correct mistakes, and ask
 for a second pass if the review is too broad, too harsh, too vague, or missing
 evidence.</pre>
+        </div>
+      </article>
     </section>
 
     <p class="footer-note">Different AI assistants may format this less neatly, omit sections, or need reminders. The Starter Kit is designed to help the user ask for a better second pass.</p>
