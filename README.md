@@ -26,11 +26,17 @@ After unzipping it, open `START_HERE.md`. For the easiest path, attach `USE_THIS
 
 ## View the Demo
 
-Open the public demo here:
+Open the public dashboard demo here:
 
 https://ayakoredon.github.io/tracewright-narrative-uncertainty-map/
 
-The demo is a static GitHub Pages site. It uses synthetic cases only; no private correspondence, collector file, manuscript, or real unpublished source material is included.
+The dashboard demo is a static GitHub Pages site. It uses synthetic cases only; no private correspondence, collector file, manuscript, or real unpublished source material is included.
+
+Simple AI Review example:
+
+https://ayakoredon.github.io/tracewright-narrative-uncertainty-map/simple-ai-example.html
+
+This separate page shows what the lightweight Starter Kit workflow can look like when a user attaches one Tracewright instruction file to a familiar AI assistant and receives a Markdown review map instead of an interactive dashboard.
 
 ## Why This Exists
 
@@ -77,7 +83,7 @@ The intended output is not a verdict. It is a review map.
 
 ## Demo
 
-Open the live demo here:
+Open the live dashboard demo here:
 
 https://ayakoredon.github.io/tracewright-narrative-uncertainty-map/
 
@@ -86,6 +92,8 @@ You can also open `index.html` locally in a browser. The same demo is available 
 The demo uses synthetic review materials only. The cases are designed to show how stable human texture, cross-language influence, editorial polish, source grounding, and claim reliability can be separated during review. The Summary tab gives a short triage view, while the Interpretation Guide explains how to read review lanes, texture axes, evidence cards, source roles, and escalation rules without turning them into detector scores.
 
 The demo includes several document genres: personal correspondence, mixed AI/editorial writing, institutional newsletter-style prose, academic paper review, public narrative dossiers, and art-provenance review. These genres should not be reviewed with identical prompts or assumptions.
+
+For the non-dashboard workflow, see `simple-ai-example.html`. It shows a reconstructed academic review map generated through the simple "use this with your AI" path.
 
 ## Download the Starter Kit
 
@@ -109,6 +117,8 @@ After downloading and unzipping the starter kit, open `START_HERE.md` first. Non
 - **Case E: Academic Paper Review** shows how the framework can support academic quality review by surfacing weak claims, method gaps, citation uncertainty, and overgeneralization, not just possible AI mediation.
 - **Case F: Public AI Leadership Narrative Dossier** shows how public statements, company positions, reporting, and adversarial sources can be mapped to test narrative consistency without turning the review into a reputational verdict.
 - **Case G: Eighteenth-Century Painting Provenance Dossier** shows how art and collection provenance files can be reviewed across diaries, auction records, researcher notes, material analysis, wartime gaps, and archival silence.
+
+Separate from the dashboard cases, the **Simple AI Review Example** shows what a Markdown academic review map can look like when the Starter Kit is used with a general-purpose AI assistant.
 
 ## Reproducing the Method Locally
 
