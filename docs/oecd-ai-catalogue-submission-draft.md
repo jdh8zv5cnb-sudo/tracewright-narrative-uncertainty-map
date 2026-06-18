@@ -1,4 +1,4 @@
-# OECD.AI Catalogue Submission Draft
+﻿# OECD.AI Catalogue Submission Draft
 
 Use this draft for the OECD.AI "Submit a tool to the Catalogue of Tools & Metrics for Trustworthy AI" form.
 
@@ -12,7 +12,7 @@ https://ayakoredon.github.io/tracewright-narrative-uncertainty-map/
 
 Starter kit download:
 
-https://ayakoredon.github.io/tracewright-narrative-uncertainty-map/downloads/tracewright-narrative-starter-kit-v0.2.zip
+https://ayakoredon.github.io/tracewright-narrative-uncertainty-map/downloads/tracewright-narrative-starter-kit-v0.3.zip
 
 GitHub repository:
 
@@ -90,7 +90,7 @@ https://ayakoredon.github.io/tracewright-narrative-uncertainty-map/
 
 Starter kit download:
 
-https://ayakoredon.github.io/tracewright-narrative-uncertainty-map/downloads/tracewright-narrative-starter-kit-v0.2.zip
+https://ayakoredon.github.io/tracewright-narrative-uncertainty-map/downloads/tracewright-narrative-starter-kit-v0.3.zip
 
 GitHub repository of the tool:
 
@@ -315,3 +315,4 @@ Avoid screenshots that suggest:
 ## Final Safety Sentence to Include if Space Allows
 
 Tracewright is designed to help reviewers ask better questions before making decisions; it should not be used as an automated detector, enforcement mechanism, or substitute for qualified human review.
+

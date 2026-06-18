@@ -1,4 +1,4 @@
-# Tracewright Narrative Uncertainty Map
+﻿# Tracewright Narrative Uncertainty Map
 
 ## Tracewright is a review method and dashboard for examining written materials.
 
@@ -12,7 +12,7 @@ It can also be used to improve human-written work: clarifying arguments, extract
 https://ayakoredon.github.io/tracewright-narrative-uncertainty-map/simple-ai-example.html
 
 **Download the Starter Kit:**  
-https://ayakoredon.github.io/tracewright-narrative-uncertainty-map/downloads/tracewright-narrative-starter-kit-v0.2.zip
+https://ayakoredon.github.io/tracewright-narrative-uncertainty-map/downloads/tracewright-narrative-starter-kit-v0.3.zip
 
 **Japanese guide / 日本語ガイド:**  
 https://github.com/ayakoredon/tracewright-narrative-uncertainty-map/blob/main/README.ja.md
@@ -36,7 +36,7 @@ You can use the Starter Kit with an AI assistant you already have, including fre
 
 **Download the Starter Kit:**
 
-https://ayakoredon.github.io/tracewright-narrative-uncertainty-map/downloads/tracewright-narrative-starter-kit-v0.2.zip
+https://ayakoredon.github.io/tracewright-narrative-uncertainty-map/downloads/tracewright-narrative-starter-kit-v0.3.zip
 
 After unzipping it, open `START_HERE.md`. For the easiest path, attach `USE_THIS_WITH_YOUR_AI.md` to your AI assistant and paste the short starter message. The AI should then check file safety, ask what kind of review you want, and guide the next step.
 
@@ -121,7 +121,7 @@ For the non-dashboard workflow, see `simple-ai-example.html`. It shows a reconst
 
 Download the local starter kit here:
 
-https://ayakoredon.github.io/tracewright-narrative-uncertainty-map/downloads/tracewright-narrative-starter-kit-v0.2.zip
+https://ayakoredon.github.io/tracewright-narrative-uncertainty-map/downloads/tracewright-narrative-starter-kit-v0.3.zip
 
 The starter kit includes two entry paths:
 
@@ -206,3 +206,4 @@ The tool is built around review posture, not verdicts. Labels such as "segment-l
 - `docs/ai-analysis-instructions.md`: prompt guidance for local AI-assisted analysis.
 - `docs/ethics.md`: privacy, consent, and misuse boundaries.
 - `LICENSE`: initial open license.
+
