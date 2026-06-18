@@ -1,153 +1,63 @@
 # Tracewright Narrative Uncertainty Map Starter Kit
 
-This starter kit lets you try the Tracewright review method locally with your own AI assistant and your own source materials.
-
 Tracewright is not designed to expose people. It is designed to slow down premature judgment.
 
-## Super Simple Start
+This starter kit has two paths.
 
-If you downloaded the ZIP file and do not know what to do next, open:
+## If You Want The Simplest Possible Start
+
+Open:
 
 ```text
 START_HERE.md
 ```
 
-That file tells you exactly which starter kit files to upload to your AI assistant and what message to paste into the chat.
+Then follow Path 1.
 
-Important: before uploading any review documents, confirm that your AI environment is appropriate for those documents. Do not upload private, confidential, personal, unpublished, legally sensitive, or third-party materials unless you understand the AI service's data handling and have the right to use those materials there.
+You will attach one file, `USE_THIS_WITH_YOUR_AI.md`, to your AI assistant and paste one short message. Your AI assistant should then check privacy, ask what kind of review you want, and guide the next step.
 
-## If You Are Starting From ChatGPT, Claude, or Another AI Account
+This path works even if your AI assistant only produces a Markdown review map instead of a dashboard.
 
-You do not need to install a special AI system to try this kit. You can use an AI assistant you already have access to, such as ChatGPT, Claude, Gemini, or a local LLM. The important part is to tell the AI what kind of review you want before you paste or upload documents.
-
-Start here:
-
-1. Download and unzip the starter kit.
-2. Open this `README.md` file.
-3. Open `dashboard/index.html` in your browser so you can see what the final review map can look like.
-4. Open `prompts/review-intake-worksheet.md`.
-5. Choose the review mode that fits your material: academic review, claim/fact consistency, correspondence continuity, authorship/mediation workflow, provenance/source-role review, or another mode.
-6. Open your AI assistant in a private workspace or chat.
-7. Paste the filled-in review-intake worksheet into the AI chat.
-8. Then paste `prompts/tracewright-analysis-prompt.md`.
-9. If one mode clearly applies, also paste the relevant section from `prompts/mode-specific-prompt-snippets.md`.
-10. Only after that, upload or paste the documents you want reviewed.
-11. Ask the AI to produce a Tracewright-style review map with claims, evidence cards, review lanes, uncertainty notes, and follow-up questions.
-12. Use `prompts/refinement-feedback-prompt.md` to ask for a second pass if the first result is too vague, too verdict-like, or missing evidence.
-
-For a first test, use a small document set: one short article, one letter exchange, one draft paper section, or three to five related source excerpts. Do not start with a large archive.
-
-## Copy-Paste Starter Message
-
-If you are unsure what to say to your AI assistant, start with this:
-
-```text
-I want to use the Tracewright Narrative Uncertainty Map method.
-
-Please do not treat this as an AI-detection task. I want a review map that slows down premature judgment.
-
-Before analyzing my documents, please help me choose the right review mode and ask clarifying questions if my goal is unclear. Possible modes include academic review, claim/fact consistency, correspondence continuity, authorship/mediation workflow, and provenance/source-role review.
-
-After I provide the materials, please separate:
-- what the documents explicitly say
-- what can be inferred
-- what remains uncertain
-- what alternative explanations should be kept open
-- what evidence or follow-up question would reduce uncertainty
-```
-
-Then paste the review-intake worksheet and your selected prompt files.
-
-## What Is Included
-
-- `dashboard/index.html`  
-  A static dashboard demo that opens in a browser.
-
-- `prompts/tracewright-analysis-prompt.md`  
-  A reusable prompt for asking your own AI assistant to prepare a Tracewright-style review map.
-
-- `prompts/ai-onboarding-prompt.md`
-  The first prompt to give your AI assistant so it can confirm file access, ask safety questions, and help choose a review mode before analysis.
-
-- `prompts/review-intake-worksheet.md`
-  A worksheet for choosing the review mode and telling your AI what kind of analysis you need before uploading or pasting materials.
-
-- `prompts/mode-specific-prompt-snippets.md`
-  Short prompt additions for common review modes.
-
-- `prompts/refinement-feedback-prompt.md`
-  A follow-up prompt for improving the first AI output.
-
-- `templates/case-data-template.json`  
-  A structured case-data template showing the fields used by the dashboard.
-
-- `docs/ai-analysis-instructions.md`  
-  Review instructions for correspondence, articles, newsletters, academic papers, and other narrative materials.
-
-- `docs/methodology.md`  
-  The core Tracewright method.
-
-- `docs/ethics.md`  
-  Privacy, consent, and misuse boundaries.
-
-## Basic Workflow
-
-1. Keep private source materials on your own machine or in your own secure workspace.
-2. Open the dashboard demo once so you understand the kind of review map you are trying to produce.
-3. Fill out `prompts/review-intake-worksheet.md` so your AI assistant knows the review mode, purpose, limits, and known context.
-4. Ask your preferred AI assistant to analyze a bounded document set using `prompts/tracewright-analysis-prompt.md` plus the appropriate mode snippet.
-5. Use `prompts/refinement-feedback-prompt.md` to challenge and improve the first output.
-6. Review the AI output yourself. Correct source excerpts, claims, evidence cards, and uncertainty labels.
-7. Adapt the structured output into the shape shown in `templates/case-data-template.json`.
-8. Use the dashboard as a review map, not as a verdict.
-
-## What To Do With the AI Output
-
-The AI's first answer is only a draft. Check whether it:
-
-- quotes or points to exact source passages
-- separates authorship questions from factual-reliability questions
-- preserves alternative explanations
-- avoids verdict language such as "this is AI-written" or "this person is lying"
-- tells you what to verify next
-
-If the answer is too broad, ask for a narrower second pass. If it gives conclusions without evidence, ask it to rebuild the map from source excerpts and uncertainty notes.
-
-## What This Kit Does Not Do
-
-- It does not upload documents.
-- It does not connect to an AI API.
-- It does not store your private materials.
-- It does not detect whether a text was written by AI.
-- It does not replace legal, academic, editorial, provenance, or professional review.
-
-## Choosing a Review Mode
-
-Tracewright works best when the AI knows what kind of review you want. Before analysis, choose a primary mode:
-
-- Claim and Fact Consistency
-- Academic Review
-- Correspondence / Personal Narrative Continuity
-- Authorship / Mediation Workflow
-- Provenance / Source-Role Review
-
-If more than one mode applies, choose one primary mode and one secondary mode. The same source material can produce different useful maps depending on the review purpose.
-
-## How To Open the Dashboard
+## If You Want To Build Or Adapt A Dashboard
 
 Open:
 
 ```text
-dashboard/index.html
+DASHBOARD_BUILDER_GUIDE.md
 ```
 
-The included dashboard uses synthetic demo cases. To review your own material, adapt the dashboard or use the template as a guide for building your own case data.
+This path is for Codex users, local HTML/JSON users, or people who want to convert AI analysis into a dashboard.
 
-## Safe Use
+## What Is Included
 
-Use synthetic, anonymized, consent-safe, or private-local materials unless you have permission to publish the source text.
+- `START_HERE.md`  
+  The shortest entry point. Choose the simple AI-review path or the dashboard-builder path.
 
-Do not use Tracewright to accuse, shame, expose, or rank people based on suspected AI use. The purpose is to document uncertainty, preserve alternative explanations, and decide what should be checked next.
+- `USE_THIS_WITH_YOUR_AI.md`  
+  A single file that non-technical users can attach to ChatGPT, Claude, Gemini, or another AI assistant.
+
+- `DASHBOARD_BUILDER_GUIDE.md`  
+  Instructions for users who want to adapt the dashboard or structured data.
+
+- `dashboard/index.html`  
+  A static synthetic demo dashboard.
+
+- `prompts/`  
+  More detailed prompt files for users who want finer control.
+
+- `templates/case-data-template.json`  
+  A structured case-data template.
+
+- `docs/`  
+  Methodology, AI-analysis instructions, and ethics notes.
+
+## Before Uploading Documents
+
+Do not upload private, confidential, personal, unpublished, legally sensitive, or third-party materials unless you understand the AI service's data handling and have the right to use those materials there.
+
+If you are not sure, use redacted, anonymized, synthetic, or non-sensitive excerpts first.
+
+Tracewright does not provide privacy protection by itself. Privacy depends on the AI service, account settings, local environment, and documents you choose to use.
 
 ## Public Project Links
 

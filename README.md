@@ -73,9 +73,12 @@ Download the local starter kit here:
 
 https://ayakoredon.github.io/tracewright-narrative-uncertainty-map/downloads/tracewright-narrative-starter-kit-v0.2.zip
 
-The starter kit includes a static dashboard, review-intake worksheet, mode-specific prompt snippets, AI analysis prompt, refinement prompt, case-data template, methodology notes, and ethics guidance. It is designed for local review workflows where users analyze their own private materials with their own AI assistant or local process.
+The starter kit includes two entry paths:
 
-After downloading and unzipping the starter kit, open `START_HERE.md` first. It gives a very simple path for non-technical users: which starter kit files to upload to their AI assistant, what message to paste into the chat, and what privacy checks to complete before uploading any review documents.
+- **Simple AI Review**: for users who only want to attach one instruction file to ChatGPT, Claude, Gemini, or another AI assistant and receive a Markdown review map.
+- **Dashboard Builder**: for Codex users, local HTML/JSON users, or reviewers who want to adapt the dashboard itself.
+
+After downloading and unzipping the starter kit, open `START_HERE.md` first. Non-technical users can attach `USE_THIS_WITH_YOUR_AI.md` to their AI assistant and paste one short message. The AI should then check file safety, ask what kind of review is needed, and guide the next step.
 
 ## Demo Cases
 

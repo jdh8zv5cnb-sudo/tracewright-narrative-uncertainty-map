@@ -1,93 +1,62 @@
 # Start Here
 
-Use this file if you have downloaded the Tracewright Narrative Uncertainty Map Starter Kit and are not sure what to do next.
+Choose one path.
 
-You only need:
+## Path 1: I Just Want My AI To Review Documents
 
-- this starter kit folder
-- an AI assistant you already use, such as ChatGPT, Claude, Gemini, or a local AI model
-- one small set of documents you want to review
+Use this path if you have ChatGPT, Claude, Gemini, or another AI assistant and you do not want to build a dashboard.
 
-## Before You Upload Anything
-
-Stop and check this first:
-
-1. Are the documents private, confidential, unpublished, personal, legally sensitive, or covered by someone else's rights?
-2. Do you understand what your AI assistant does with uploaded files?
-3. Is your AI workspace appropriate for this material?
-4. Are you allowed to upload these files to that AI system?
-
-If you are not sure, do not upload the documents. Use synthetic, redacted, anonymized, or non-sensitive materials for your first test.
-
-Tracewright does not provide privacy protection by itself. Your privacy depends on the AI service, account settings, local environment, and documents you choose to use.
-
-## Easiest Way To Start
-
-1. Unzip the starter kit.
-2. Open your AI assistant.
-3. Use the AI assistant's file upload button, often called "Attach", "Add files", "Upload", or a paperclip icon.
-4. Upload these starter kit files:
+1. Open your AI assistant.
+2. Attach this one file:
 
 ```text
-START_HERE.md
-prompts/ai-onboarding-prompt.md
-prompts/review-intake-worksheet.md
-prompts/tracewright-analysis-prompt.md
-prompts/mode-specific-prompt-snippets.md
-prompts/refinement-feedback-prompt.md
-templates/case-data-template.json
+USE_THIS_WITH_YOUR_AI.md
 ```
 
-5. Paste this message into the chat:
+3. Paste this message:
 
 ```text
-I uploaded the Tracewright starter kit files. Please read them first.
+Please read the attached Tracewright file first.
 
-Before I upload my review documents, please:
-1. confirm whether you can read the starter kit files,
-2. remind me to check whether my documents are safe and appropriate to upload to this AI environment,
-3. ask me what kind of review I want,
-4. help me choose the right Tracewright review mode,
-5. tell me what files or excerpts you need next.
+Before I upload any documents, please help me check whether this AI environment is appropriate for my files, ask what kind of review I want, and guide me step by step.
 
-Do not start by making an AI-detection judgment. Help me build a careful uncertainty review map.
+I do not want an AI-detector verdict. I want a careful uncertainty review map.
 ```
 
-6. Wait for the AI to answer.
-7. Answer the AI's questions.
-8. Upload or paste only the documents you are comfortable sharing with that AI system.
-9. Ask the AI to create a Tracewright-style review map.
-10. Review the result yourself. Treat it as a draft, not as a verdict.
+4. Wait for your AI assistant to ask questions.
+5. Upload or paste only documents you are allowed to share with that AI environment.
+6. Let the AI create a Markdown review map.
+7. Ask for a second pass if you want more detail, clearer evidence, or a different review focus.
 
-## If File Upload Does Not Work
+That is enough for a first test.
 
-If your AI assistant cannot read uploaded files, paste the contents of these files into the chat instead:
+## Path 2: I Want To Build Or Adapt The Dashboard
 
-1. `prompts/ai-onboarding-prompt.md`
-2. `prompts/review-intake-worksheet.md`
-3. `prompts/tracewright-analysis-prompt.md`
-4. one relevant section from `prompts/mode-specific-prompt-snippets.md`
+Use this path if you use Codex, local HTML, JSON, or another AI-assisted coding workflow.
 
-Then paste a small sample of the documents you want reviewed.
+1. Open:
 
-## What Should Happen Next
+```text
+DASHBOARD_BUILDER_GUIDE.md
+```
 
-The AI should not immediately analyze your documents. First, it should ask questions such as:
-
-- What kind of material is this?
-- What do you want to understand?
-- Are you checking factual consistency, academic quality, authorship mediation, provenance, or something else?
-- What is already known about how the documents were written, edited, translated, or generated?
-- Are there privacy or consent limits?
-
-If the AI does not ask these questions, paste the message from step 5 again.
-
-## Optional: Open the Demo Dashboard
-
-To see what the final review map can look like, open:
+2. Open the demo dashboard:
 
 ```text
 dashboard/index.html
 ```
 
-The dashboard contains synthetic demo cases. It does not analyze your documents by itself.
+3. Use the files in `prompts/`, `templates/`, and `docs/` to generate structured review data.
+
+## Privacy Check Before Uploading Documents
+
+Before uploading anything to an AI assistant, ask yourself:
+
+- Is this document private, confidential, personal, unpublished, legally sensitive, or owned by someone else?
+- Do I understand what this AI service does with uploaded files?
+- Is this AI workspace appropriate for this material?
+- Am I allowed to upload these files here?
+
+If the answer is uncertain, do not upload the documents. Use redacted, anonymized, synthetic, or non-sensitive excerpts first.
+
+Tracewright does not provide privacy protection by itself. Privacy depends on the AI service, account settings, local environment, and document choices.
