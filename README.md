@@ -75,6 +75,8 @@ https://ayakoredon.github.io/tracewright-narrative-uncertainty-map/downloads/tra
 
 The starter kit includes a static dashboard, review-intake worksheet, mode-specific prompt snippets, AI analysis prompt, refinement prompt, case-data template, methodology notes, and ethics guidance. It is designed for local review workflows where users analyze their own private materials with their own AI assistant or local process.
 
+After downloading and unzipping the starter kit, open `START_HERE.md` first. It gives a very simple path for non-technical users: which starter kit files to upload to their AI assistant, what message to paste into the chat, and what privacy checks to complete before uploading any review documents.
+
 ## Demo Cases
 
 - **Case A: Self-Written Baseline** shows what a stable, lightly mediated personal-writing baseline can look like without treating it as a universal standard.

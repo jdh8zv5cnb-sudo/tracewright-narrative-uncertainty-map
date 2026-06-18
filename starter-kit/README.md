@@ -4,6 +4,18 @@ This starter kit lets you try the Tracewright review method locally with your ow
 
 Tracewright is not designed to expose people. It is designed to slow down premature judgment.
 
+## Super Simple Start
+
+If you downloaded the ZIP file and do not know what to do next, open:
+
+```text
+START_HERE.md
+```
+
+That file tells you exactly which starter kit files to upload to your AI assistant and what message to paste into the chat.
+
+Important: before uploading any review documents, confirm that your AI environment is appropriate for those documents. Do not upload private, confidential, personal, unpublished, legally sensitive, or third-party materials unless you understand the AI service's data handling and have the right to use those materials there.
+
 ## If You Are Starting From ChatGPT, Claude, or Another AI Account
 
 You do not need to install a special AI system to try this kit. You can use an AI assistant you already have access to, such as ChatGPT, Claude, Gemini, or a local LLM. The important part is to tell the AI what kind of review you want before you paste or upload documents.
@@ -53,6 +65,9 @@ Then paste the review-intake worksheet and your selected prompt files.
 
 - `prompts/tracewright-analysis-prompt.md`  
   A reusable prompt for asking your own AI assistant to prepare a Tracewright-style review map.
+
+- `prompts/ai-onboarding-prompt.md`
+  The first prompt to give your AI assistant so it can confirm file access, ask safety questions, and help choose a review mode before analysis.
 
 - `prompts/review-intake-worksheet.md`
   A worksheet for choosing the review mode and telling your AI what kind of analysis you need before uploading or pasting materials.
