@@ -36,7 +36,7 @@ Avoid framing:
 
 ## Name of the Tool
 
-Tracewright Uncertainty Map
+Tracewright Narrative Uncertainty Map
 
 Alternative if a broader name is preferred:
 
@@ -48,15 +48,15 @@ Tracewright: Provenance and Uncertainty Map
 
 Recommended version, 56 words:
 
-Tracewright Uncertainty Map is a human-in-the-loop review dashboard for AI-mediated and mixed-source narrative materials. It helps reviewers map claims, source roles, provenance disclosures, evidence gaps, and alternative explanations without producing detector-style verdicts. The public prototype demonstrates correspondence, academic, public narrative, institutional, and art-provenance review cases using synthetic materials.
+Tracewright Narrative Uncertainty Map is a human-in-the-loop review dashboard for AI-mediated and mixed-source narrative materials. It helps reviewers map claims, source roles, provenance disclosures, evidence gaps, and alternative explanations without producing detector-style verdicts. The public prototype demonstrates correspondence, academic, public narrative, institutional, and art-provenance review cases using synthetic materials.
 
 Shorter version, 39 words:
 
-Tracewright Uncertainty Map helps reviewers inspect AI-mediated or mixed-source narrative materials by mapping claims, source roles, provenance disclosures, evidence gaps, and next verification steps. It is designed to slow premature judgment, not to detect or expose people.
+Tracewright Narrative Uncertainty Map helps reviewers inspect AI-mediated or mixed-source narrative materials by mapping claims, source roles, provenance disclosures, evidence gaps, and next verification steps. It is designed to slow premature judgment, not to detect or expose people.
 
 ## Detailed Description
 
-Tracewright Uncertainty Map is a public prototype and review framework for reading narrative materials more carefully in an AI-mediated information environment. It was developed from the observation that the central question is often not simply whether a text was written by a human or by AI, but what can be trusted, what needs checking, what changed over time, which source said what, and what action a responsible reviewer should take next.
+Tracewright Narrative Uncertainty Map is a public prototype and review framework for reading narrative materials more carefully in an AI-mediated information environment. It was developed from the observation that the central question is often not simply whether a text was written by a human or by AI, but what can be trusted, what needs checking, what changed over time, which source said what, and what action a responsible reviewer should take next.
 
 The tool organizes a document set into review materials, claims, evidence cards, source roles, timeline entries, disclosure/provenance notes, and follow-up actions. It separates several review lanes that are often collapsed in ordinary reading: authorship or mediation, claim reliability, and disclosure or provenance. It also distinguishes human/source texture from machine/editorial cleanliness as review cues, not as authenticity probabilities.
 

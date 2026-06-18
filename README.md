@@ -1,4 +1,4 @@
-# Tracewright Letter Uncertainty Map
+# Tracewright Narrative Uncertainty Map
 
 Tracewright is not designed to expose people. It is designed to slow down premature judgment.
 

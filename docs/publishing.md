@@ -4,11 +4,11 @@
 
 Repository name:
 
-`tracewright-letter-uncertainty-map`
+`tracewright-narrative-uncertainty-map`
 
 Short description:
 
-`A synthetic demo for slowing down premature judgment when reviewing AI-mediated text.`
+`A synthetic demo for slowing down premature judgment when reviewing AI-mediated narrative materials.`
 
 Visibility:
 
@@ -19,7 +19,7 @@ Visibility:
 1. Go to GitHub.
 2. Click `+` in the top right.
 3. Choose `New repository`.
-4. Set the repository name to `tracewright-letter-uncertainty-map`.
+4. Set the repository name to `tracewright-narrative-uncertainty-map`.
 5. Set visibility to `Public`.
 6. Do not add a README, license, or gitignore on GitHub, because this folder already includes them.
 7. Click `Create repository`.
@@ -45,4 +45,4 @@ Visibility:
 
 The public demo URL will usually become:
 
-`https://YOUR-USERNAME.github.io/tracewright-letter-uncertainty-map/`
+`https://YOUR-USERNAME.github.io/tracewright-narrative-uncertainty-map/`
