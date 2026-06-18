@@ -1,0 +1,89 @@
+{
+  "id": "case_id",
+  "name": "Case Name",
+  "stage": "Document genre or review stage",
+  "level": "Review posture label",
+  "intuition": "Reader intuition, if supplied. Keep separate from evidence.",
+  "overview": "Short analysis overview.",
+  "posture": "How a reviewer should approach this case without turning it into a verdict.",
+  "screening": {
+    "recommended_action": "What to do next.",
+    "evidence_completeness": "What source material is present or missing.",
+    "known_provenance": "Known workflow, source, AI, translation, or editorial information.",
+    "blind_reading_value": "What this case can teach in a blind review.",
+    "overclaim_risk": "What would be risky to conclude too quickly.",
+    "next_checks": [
+      "Next check 1",
+      "Next check 2"
+    ]
+  },
+  "guide": {
+    "texture": {
+      "human": 0,
+      "machine": 0,
+      "total": 0
+    },
+    "lanes": {
+      "authorship": 0,
+      "claims": 0,
+      "disclosure": 0,
+      "total": 0,
+      "pressure": "Low / Moderate / High"
+    },
+    "focus": [
+      [
+        "yellow",
+        "S001",
+        "Claim reliability",
+        "Short focus title",
+        "Why this is one of the first places to inspect."
+      ]
+    ]
+  },
+  "claims": [
+    [
+      "Claim or observation.",
+      "Claim type.",
+      "Support status.",
+      "Review posture."
+    ]
+  ],
+  "messages": [
+    [
+      "S001",
+      "Source role",
+      "target",
+      "YYYY-MM-DD or date range",
+      "source:identifier",
+      "Short source summary.",
+      [
+        "Flag 1",
+        "Flag 2"
+      ]
+    ]
+  ],
+  "evidence": [
+    [
+      "Evidence card title",
+      "yellow",
+      "source:identifier",
+      "Source excerpt.",
+      [
+        [
+          "marked text",
+          "mark label",
+          "why this marked text matters"
+        ]
+      ],
+      [
+        "Reasoning step 1",
+        "Reasoning step 2"
+      ],
+      [
+        "Alternative explanation 1",
+        "Alternative explanation 2"
+      ],
+      "human / machine / none"
+    ]
+  ]
+}

@@ -67,6 +67,14 @@ The demo uses synthetic review materials only. The cases are designed to show ho
 
 The demo includes several document genres: personal correspondence, mixed AI/editorial writing, institutional newsletter-style prose, academic paper review, public narrative dossiers, and art-provenance review. These genres should not be reviewed with identical prompts or assumptions.
 
+## Download the Starter Kit
+
+Download the local starter kit here:
+
+https://ayakoredon.github.io/tracewright-narrative-uncertainty-map/downloads/tracewright-narrative-starter-kit.zip
+
+The starter kit includes a static dashboard, AI analysis prompt, case-data template, methodology notes, and ethics guidance. It is designed for local review workflows where users analyze their own private materials with their own AI assistant or local process.
+
 ## Demo Cases
 
 - **Case A: Self-Written Baseline** shows what a stable, lightly mediated personal-writing baseline can look like without treating it as a universal standard.

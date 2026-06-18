@@ -10,6 +10,10 @@ Public demo:
 
 https://ayakoredon.github.io/tracewright-narrative-uncertainty-map/
 
+Starter kit download:
+
+https://ayakoredon.github.io/tracewright-narrative-uncertainty-map/downloads/tracewright-narrative-starter-kit.zip
+
 GitHub repository:
 
 https://github.com/ayakoredon/tracewright-narrative-uncertainty-map
@@ -83,6 +87,10 @@ The tool is designed for improvement and verification rather than punishment. It
 Link to the tool's website:
 
 https://ayakoredon.github.io/tracewright-narrative-uncertainty-map/
+
+Starter kit download:
+
+https://ayakoredon.github.io/tracewright-narrative-uncertainty-map/downloads/tracewright-narrative-starter-kit.zip
 
 GitHub repository of the tool:
 
