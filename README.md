@@ -71,7 +71,7 @@ The demo includes several document genres: personal correspondence, mixed AI/edi
 
 Download the local starter kit here:
 
-https://ayakoredon.github.io/tracewright-narrative-uncertainty-map/downloads/tracewright-narrative-starter-kit.zip
+https://ayakoredon.github.io/tracewright-narrative-uncertainty-map/downloads/tracewright-narrative-starter-kit-v0.2.zip
 
 The starter kit includes a static dashboard, review-intake worksheet, mode-specific prompt snippets, AI analysis prompt, refinement prompt, case-data template, methodology notes, and ethics guidance. It is designed for local review workflows where users analyze their own private materials with their own AI assistant or local process.
 

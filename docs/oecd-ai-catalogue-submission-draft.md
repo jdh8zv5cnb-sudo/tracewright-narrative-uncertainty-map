@@ -12,7 +12,7 @@ https://ayakoredon.github.io/tracewright-narrative-uncertainty-map/
 
 Starter kit download:
 
-https://ayakoredon.github.io/tracewright-narrative-uncertainty-map/downloads/tracewright-narrative-starter-kit.zip
+https://ayakoredon.github.io/tracewright-narrative-uncertainty-map/downloads/tracewright-narrative-starter-kit-v0.2.zip
 
 GitHub repository:
 
@@ -90,7 +90,7 @@ https://ayakoredon.github.io/tracewright-narrative-uncertainty-map/
 
 Starter kit download:
 
-https://ayakoredon.github.io/tracewright-narrative-uncertainty-map/downloads/tracewright-narrative-starter-kit.zip
+https://ayakoredon.github.io/tracewright-narrative-uncertainty-map/downloads/tracewright-narrative-starter-kit-v0.2.zip
 
 GitHub repository of the tool:
 
