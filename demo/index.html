@@ -235,11 +235,11 @@
         <strong>Try it with your own AI</strong>
         <p>Download the Starter Kit and attach one file to ChatGPT, Claude, Gemini, or another AI assistant. Even without coding, you can get a Markdown review map for papers, drafts, stories, records, or other written materials.</p>
         <p>Japanese guide: <a href="../README.ja.md">README.ja.md</a></p>
-        <a href="downloads/tracewright-narrative-starter-kit-v0.5.zip" download>Download Starter Kit</a>
+        <a href="../downloads/tracewright-narrative-starter-kit-v0.6.zip" download>Download Starter Kit</a>
       </div>
       <div class="resource-links">
-        <a href="simple-ai-example.html">Simple AI Review Example</a>
-        <a href="downloads/tracewright-narrative-starter-kit-v0.5.zip" download>Download Starter Kit ZIP</a>
+        <a href="../simple-ai-example.html">Simple AI Review Example</a>
+        <a href="../downloads/tracewright-narrative-starter-kit-v0.6.zip" download>Download Starter Kit ZIP</a>
         <a href="../COMMERCIAL_USE.md">License / Commercial Use</a>
         <a href="https://github.com/ayakoredon/tracewright-narrative-uncertainty-map">View on GitHub</a>
       </div>
@@ -287,15 +287,15 @@ const cases = [
       recommended_action: "Baseline reference",
       evidence_completeness: "Medium: three synthetic messages only",
       known_provenance: "Synthetic demo data; no real private letter included.",
-      blind_reading_value: "Shows what stable human texture can look like.",
+      blind_reading_value: "Shows what stable writer/source texture can look like.",
       overclaim_risk: "Medium if treated as a universal standard.",
       next_checks: ["Collect more letters.", "Check whether small irregularities persist.", "Avoid using this as a rigid normal."]
     },
     guide: {
-      texture: { human: 4, machine: 1, total: 5 },
+      texture: { source_texture: 4, mediation_polish: 1, total: 5 },
       lanes: { authorship: 2, claims: 2, disclosure: 1, total: 5, pressure: "Low" },
       focus: [
-        ["green", "C001", "Authorship / mediation", "Human texture", "Small unpolished phrasing remains visible while the reply still answers the context directly."],
+        ["green", "C001", "Authorship / mediation", "writer/source texture", "Small unpolished phrasing remains visible while the reply still answers the context directly."],
         ["green", "C002", "Claim reliability", "Continuity", "The second reply naturally reuses earlier details."]
       ]
     },
@@ -306,11 +306,11 @@ const cases = [
     ],
     messages: [
       ["A001", "Reviewer / context", "context", "2026-04-01", "synthetic:A001", "The reviewer asks about local work, music, and language learning.", ["Context only"]],
-      ["C001", "Correspondent / target", "target", "2026-04-03", "synthetic:C001", "The correspondent answers directly, gives concrete work details, and asks a specific return question.", ["Stable", "Direct response", "Human texture"]],
+      ["C001", "Correspondent / target", "target", "2026-04-03", "synthetic:C001", "The correspondent answers directly, gives concrete work details, and asks a specific return question.", ["Stable", "Direct response", "writer/source texture"]],
       ["C002", "Correspondent / target", "target", "2026-04-10", "synthetic:C002", "The second reply reuses earlier details naturally and keeps the same uneven but fluent style.", ["Continuity", "Stable style"]]
     ],
     evidence: [
-      ["Human Texture", "green", "synthetic:C001", "I tried to explain it better, but maybe I make the sentence too long...", [["make the sentence too long", "non-native phrasing", "A small local irregularity remains in an otherwise clear sentence."]], ["The phrase is clear but not polished flat.", "The writer process is visible.", "This supports human texture but does not prove authorship."], ["A tool could preserve original phrasing.", "A non-native writer may also use grammar checking."], "human"]
+      ["writer/source texture", "green", "synthetic:C001", "I tried to explain it better, but maybe I make the sentence too long...", [["make the sentence too long", "non-native phrasing", "A small local irregularity remains in an otherwise clear sentence."]], ["The phrase is clear but not polished flat.", "The writer process is visible.", "This supports writer/source texture but does not prove authorship."], ["A tool could preserve original phrasing.", "A non-native writer may also use grammar checking."], "source_texture"]
     ]
   },
   {
@@ -330,7 +330,7 @@ const cases = [
       next_checks: ["Ask writing-language workflow gently.", "Compare supported and unsupported passages.", "Track continuity independent of grammar."]
     },
     guide: {
-      texture: { human: 3, machine: 2, total: 5 },
+      texture: { source_texture: 3, mediation_polish: 2, total: 5 },
       lanes: { authorship: 3, claims: 1, disclosure: 2, total: 5, pressure: "Moderate" },
       focus: [
         ["blue", "C001", "Authorship / mediation", "Cross-language influence", "The English surface has local friction, but the content remains personal and responsive."],
@@ -347,7 +347,7 @@ const cases = [
       ["C001", "Correspondent / target", "target", "2026-04-06", "synthetic:C001", "The correspondent gives a personal answer but uses unusual collocations and direct source-language structure.", ["Cross-language influence", "Stable", "Verify gently"]]
     ],
     evidence: [
-      ["Cross-Language Influence", "blue", "synthetic:C001", "I am respectful for this old music, but I cannot imagine how it is living in your day.", [["respectful for", "preposition drift", "Clear meaning, unusual English collocation."], ["how it is living", "source-language shaping", "Possibly source-language structure carried into English."]], ["The content is personal and responsive.", "The English surface contains local non-native friction.", "This supports cross-language uncertainty, not AI authorship."], ["Direct non-native English.", "Machine translation with light editing.", "Human translation preserving source structure."], "human"]
+      ["Cross-Language Influence", "blue", "synthetic:C001", "I am respectful for this old music, but I cannot imagine how it is living in your day.", [["respectful for", "preposition drift", "Clear meaning, unusual English collocation."], ["how it is living", "source-language shaping", "Possibly source-language structure carried into English."]], ["The content is personal and responsive.", "The English surface contains local non-native friction.", "This supports cross-language uncertainty, not AI authorship."], ["Direct non-native English.", "Machine translation with light editing.", "Human translation preserving source structure."], "source_texture"]
     ]
   },
   {
@@ -367,7 +367,7 @@ const cases = [
       next_checks: ["Compare short and long segments.", "Ask drafting workflow naturally.", "Preserve domain-specific evidence separately."]
     },
     guide: {
-      texture: { human: 3, machine: 4, total: 5 },
+      texture: { source_texture: 3, mediation_polish: 4, total: 5 },
       lanes: { authorship: 4, claims: 2, disclosure: 2, total: 5, pressure: "High" },
       focus: [
         ["blue", "C001", "Authorship / mediation", "AI / editorial polish", "The reflective sentence is compact, balanced, and more polished than the operational material."],
@@ -384,8 +384,8 @@ const cases = [
       ["C001", "Correspondent / target", "target", "2026-04-06", "synthetic:C001", "The reply contains a precise chess correction and a polished literary reflection.", ["Domain anchor", "AI/editorial polish?", "Segment split"]]
     ],
     evidence: [
-      ["AI / Editorial Polish", "blue", "synthetic:C001", "The refuge becomes a quiet cage, a poetic punishment for refusing growth.", [["quiet cage", "aphoristic polish", "Compact literary metaphor."], ["poetic punishment", "balanced evaluative phrase", "Smooth review-like cadence."]], ["The prose is more polished than earlier operational messages.", "The same message also contains domain-specific handling.", "This supports a mixed-composition hypothesis."], ["Careful human drafting.", "Human prose edited by AI.", "AI-generated reflection plus personal insertion."], "machine"],
-      ["Domain Authorship Anchor", "green", "synthetic:C001", "You wrote Nd2, but from this position I think you meant Nbd2.", [["Nbd2", "domain-specific correction", "Requires tracking the game state."]], ["The correction is operational and specific.", "It differs from the polished literary cadence.", "Analyze it separately from the prose surface."], ["A domain tool could assist, but no evidence requires that."], "human"]
+      ["AI / Editorial Polish", "blue", "synthetic:C001", "The refuge becomes a quiet cage, a poetic punishment for refusing growth.", [["quiet cage", "aphoristic polish", "Compact literary metaphor."], ["poetic punishment", "balanced evaluative phrase", "Smooth review-like cadence."]], ["The prose is more polished than earlier operational messages.", "The same message also contains domain-specific handling.", "This supports a mixed-composition hypothesis."], ["Careful human drafting.", "Human prose edited by AI.", "AI-generated reflection plus personal insertion."], "mediation_polish"],
+      ["Domain Authorship Anchor", "green", "synthetic:C001", "You wrote Nd2, but from this position I think you meant Nbd2.", [["Nbd2", "domain-specific correction", "Requires tracking the game state."]], ["The correction is operational and specific.", "It differs from the polished literary cadence.", "Analyze it separately from the prose surface."], ["A domain tool could assist, but no evidence requires that."], "source_texture"]
     ]
   },
   {
@@ -405,7 +405,7 @@ const cases = [
       next_checks: ["Compare source notes and final article.", "Ask whether translation or AI tools were used.", "Fact-check claims separately."]
     },
     guide: {
-      texture: { human: 3, machine: 3, total: 5 },
+      texture: { source_texture: 3, mediation_polish: 3, total: 5 },
       lanes: { authorship: 3, claims: 4, disclosure: 3, total: 5, pressure: "Moderate" },
       focus: [
         ["green", "D001", "Claim reliability", "Source-backed specificity", "Material details point to a source layer that should be kept separate from the final prose layer."],
@@ -421,8 +421,8 @@ const cases = [
       ["D001", "Document / target", "target", "2026-04-20", "synthetic:D001", "A public newsletter combines archive object metadata, historical framing, and a polished support appeal.", ["Institutional template", "Archive specificity", "Editorial polish"]]
     ],
     evidence: [
-      ["Source-Backed Specificity", "green", "synthetic:D001", "The original cassette contains two platform versions on opposite sides, catalogued under the same acquisition record.", [["opposite sides", "material detail", "Physical-object detail suggests source notes or archive knowledge."], ["acquisition record", "provenance cue", "Links final prose to archival practice."]], ["The detail is too specific for generic promotional prose.", "It may come from human notes later edited or translated.", "Source layer and sentence layer should be separated."], ["A well-prompted AI could rewrite supplied source notes."], "human"],
-      ["Low-Confidence Surface Signal", "yellow", "synthetic:D001", "These materials served for the preparation of this article and are available for consultation.", [["served for the preparation", "collocation heaviness", "Possible translation or institutional English; low confidence."], ["available for consultation", "formal register", "Could be human institutional phrasing."]], ["Final English is clean enough that source language is not detectable with confidence.", "Small collocation clues are weak alone.", "Workflow evidence matters more than surface guessing."], ["Human non-native English.", "Human translation.", "LLM translation plus human check.", "Institutional style."], "none"]
+      ["Source-Backed Specificity", "green", "synthetic:D001", "The original cassette contains two platform versions on opposite sides, catalogued under the same acquisition record.", [["opposite sides", "material detail", "Physical-object detail suggests source notes or archive knowledge."], ["acquisition record", "provenance cue", "Links final prose to archival practice."]], ["The detail is too specific for generic promotional prose.", "It may come from human notes later edited or translated.", "Source layer and sentence layer should be separated."], ["A well-prompted AI could rewrite supplied source notes."], "source_texture"],
+      ["Low-Confidence Surface Signal", "yellow", "synthetic:D001", "These materials served for the preparation of this article and are available for consultation.", [["served for the preparation", "collocation heaviness", "Possible translation or institutional English; low confidence."], ["available for consultation", "formal register", "Could be human institutional phrasing."]], ["Final English is clean enough that source language is not detectable with confidence.", "Small collocation clues are weak alone.", "Workflow evidence matters more than surface guessing."], ["Human non-native English.", "Human translation.", "LLM translation plus human check.", "Institutional style."], "not_applicable"]
     ]
   },
   {
@@ -442,7 +442,7 @@ const cases = [
       next_checks: ["Trace each quantitative claim to method and table support.", "Check whether cited studies actually support the operational definition.", "Ask for dataset, inclusion criteria, and coding protocol."]
     },
     guide: {
-      texture: { human: 2, machine: 3, total: 5 },
+      texture: { source_texture: 2, mediation_polish: 3, total: 5 },
       lanes: { authorship: 2, claims: 5, disclosure: 1, total: 5, pressure: "High" },
       focus: [
         ["orange", "P002", "Claim reliability", "Method specificity gap", "The sample and coding procedure are not detailed enough to carry the conclusion."],
@@ -462,9 +462,9 @@ const cases = [
       ["P003", "Paper / conclusion", "target", "2026-05-02", "synthetic:P003", "The conclusion generalizes from the limited corpus to institutional review workflows.", ["Scope expansion", "Review"]]
     ],
     evidence: [
-      ["Method Specificity Gap", "orange", "synthetic:P002", "We selected forty-two documents representative of the field and coded them for provenance ambiguity.", [["representative of the field", "sampling claim", "The population and selection method are not defined."], ["coded them", "method compression", "No coder count, codebook, or agreement metric is visible in the excerpt."]], ["The sentence makes a methodological claim but leaves the sampling frame underspecified.", "The reader cannot yet tell whether the corpus supports the result.", "This is a claim-reliability issue, not an authorship judgment."], ["Details may appear elsewhere in the paper.", "Supplementary materials may contain the protocol.", "This may be an excerpt-level limitation."], "none"],
-      ["Overgeneralization Risk", "orange", "synthetic:P003", "These results demonstrate that narrative-provenance mapping can improve institutional review workflows across domains.", [["demonstrate", "strong causal verb", "The excerpt supports caution better than proof."], ["across domains", "scope expansion", "The claim reaches beyond the visible corpus description."]], ["The conclusion uses stronger language than the visible method supports.", "This should prompt source and scope review before citation.", "The issue is evidential strength rather than whether the prose is human or AI-written."], ["The full paper may include cross-domain validation.", "The authors may be using demonstration in a softer rhetorical sense."], "machine"],
-      ["Citation Support Check", "yellow", "synthetic:P001", "Prior work has established narrative provenance as a stable operational category.", [["established", "citation strength", "A broad literature claim needs source-level checking."], ["stable operational category", "definition claim", "The definition may vary across fields."]], ["The phrase signals a literature-foundation claim.", "A reviewer should inspect whether the cited sources actually use the same definition.", "This belongs in the claim lane even if the writing style is polished."], ["The literature review may define the term carefully later.", "The abstract may compress a nuanced discussion."], "none"]
+      ["Method Specificity Gap", "orange", "synthetic:P002", "We selected forty-two documents representative of the field and coded them for provenance ambiguity.", [["representative of the field", "sampling claim", "The population and selection method are not defined."], ["coded them", "method compression", "No coder count, codebook, or agreement metric is visible in the excerpt."]], ["The sentence makes a methodological claim but leaves the sampling frame underspecified.", "The reader cannot yet tell whether the corpus supports the result.", "This is a claim-reliability issue, not an authorship judgment."], ["Details may appear elsewhere in the paper.", "Supplementary materials may contain the protocol.", "This may be an excerpt-level limitation."], "not_applicable"],
+      ["Overgeneralization Risk", "orange", "synthetic:P003", "These results demonstrate that narrative-provenance mapping can improve institutional review workflows across domains.", [["demonstrate", "strong causal verb", "The excerpt supports caution better than proof."], ["across domains", "scope expansion", "The claim reaches beyond the visible corpus description."]], ["The conclusion uses stronger language than the visible method supports.", "This should prompt source and scope review before citation.", "The issue is evidential strength rather than whether the prose is human or AI-written."], ["The full paper may include cross-domain validation.", "The authors may be using demonstration in a softer rhetorical sense."], "mediation_polish"],
+      ["Citation Support Check", "yellow", "synthetic:P001", "Prior work has established narrative provenance as a stable operational category.", [["established", "citation strength", "A broad literature claim needs source-level checking."], ["stable operational category", "definition claim", "The definition may vary across fields."]], ["The phrase signals a literature-foundation claim.", "A reviewer should inspect whether the cited sources actually use the same definition.", "This belongs in the claim lane even if the writing style is polished."], ["The literature review may define the term carefully later.", "The abstract may compress a nuanced discussion."], "not_applicable"]
     ]
   },
   {
@@ -484,7 +484,7 @@ const cases = [
       next_checks: ["Keep direct authored texts separate from company policy pages.", "Treat external reporting and adversarial statements as attributed sources, not settled fact.", "Build dated timelines before asserting contradiction.", "Use primary filings, transcripts, or full article text before escalating claims."]
     },
     guide: {
-      texture: { human: 4, machine: 2, total: 5 },
+      texture: { source_texture: 4, mediation_polish: 2, total: 5 },
       lanes: { authorship: 4, claims: 5, disclosure: 4, total: 5, pressure: "High" },
       focus: [
         ["orange", "PF003", "Disclosure / provenance", "Source-role boundary", "A competitor or adversarial company page can be evidence-bearing while still requiring attribution and corroboration."],
@@ -505,10 +505,10 @@ const cases = [
       ["PF004", "Chronology map", "target", "2023-2026", "public:timeline", "A public narrative may change over time as models, companies, law, risk perception, and competition change. The first review step is dated mapping.", ["Chronology", "Review pressure"]]
     ],
     evidence: [
-      ["Authored-position anchor", "green", "public:authored-essays", "A signed essay or personal blog post can anchor that a person publicly held or framed a position at a given time.", [["signed essay", "source role", "Authored text is stronger for self-positioning than for proving implementation."], ["at a given time", "chronology", "The date matters before consistency is assessed."]], ["This is useful human/source texture because the source role is clear.", "It should not be expanded to every corporate action or later media narrative.", "The review should preserve the distinction between position, aspiration, and implementation."], ["A post may be edited, ghost-edited, or strategically framed.", "A public post may omit internal constraints or later changes."], "human"],
-      ["Corporate-policy boundary", "blue", "public:company-pages", "Company pages and policy announcements can describe commitments, product posture, or safety processes, but they are organizational documents.", [["company pages", "organizational source", "Do not treat as a single individual's direct authored claim."], ["commitments", "implementation claim", "Requires evidence of actual process or enforcement."]], ["The source can be public and useful while still being role-bound.", "This belongs in Disclosure / provenance because authority depends on source type.", "Tracewright should keep the corporate layer visible."], ["The leader may have approved the page.", "A policy may reflect legal, communications, or team drafting."], "machine"],
-      ["Adversarial-source warning", "orange", "public:adversarial-source", "A competitor statement, lawsuit-position page, or strongly interested source may contain useful documents while still requiring attribution and corroboration.", [["competitor statement", "source boundary", "Evidence-bearing does not mean neutral."], ["requires attribution", "handling rule", "Claims should remain attached to the source until checked."]], ["This is a central public-figure dossier risk.", "The source may contain real records, but framing can be strategic.", "The dashboard should prevent the reader from silently absorbing it as neutral biography."], ["The adversarial source may be accurate.", "The opposing side may dispute or contextualize it.", "Court filings or primary documents may settle part of the record."], "none"],
-      ["Chronology / implementation pressure", "orange", "public:timeline", "A safety-warning statement, later product launch, government deployment claim, or regulation proposal may look inconsistent unless placed in a dated timeline with role labels.", [["safety-warning statement", "early posture", "Could be collective, personal, or company-level."], ["later product launch", "implementation layer", "Should be compared with actual safeguards and dates."], ["dated timeline", "review method", "Chronology comes before contradiction."]], ["The same person can hold risk concerns while building products; that is tension, not automatically contradiction.", "The review should ask whether implementation evidence matches the public risk posture.", "This card shows how Tracewright slows reputational judgment."], ["The timeline may reveal a genuine contradiction.", "Product or policy details may resolve the tension.", "External reporting may be incomplete."], "human"]
+      ["Authored-position anchor", "green", "public:authored-essays", "A signed essay or personal blog post can anchor that a person publicly held or framed a position at a given time.", [["signed essay", "source role", "Authored text is stronger for self-positioning than for proving implementation."], ["at a given time", "chronology", "The date matters before consistency is assessed."]], ["This is useful source-grounded texture because the source role is clear.", "It should not be expanded to every corporate action or later media narrative.", "The review should preserve the distinction between position, aspiration, and implementation."], ["A post may be edited, ghost-edited, or strategically framed.", "A public post may omit internal constraints or later changes."], "source_texture"],
+      ["Corporate-policy boundary", "blue", "public:company-pages", "Company pages and policy announcements can describe commitments, product posture, or safety processes, but they are organizational documents.", [["company pages", "organizational source", "Do not treat as a single individual's direct authored claim."], ["commitments", "implementation claim", "Requires evidence of actual process or enforcement."]], ["The source can be public and useful while still being role-bound.", "This belongs in Disclosure / provenance because authority depends on source type.", "Tracewright should keep the corporate layer visible."], ["The leader may have approved the page.", "A policy may reflect legal, communications, or team drafting."], "mediation_polish"],
+      ["Adversarial-source warning", "orange", "public:adversarial-source", "A competitor statement, lawsuit-position page, or strongly interested source may contain useful documents while still requiring attribution and corroboration.", [["competitor statement", "source boundary", "Evidence-bearing does not mean neutral."], ["requires attribution", "handling rule", "Claims should remain attached to the source until checked."]], ["This is a central public-figure dossier risk.", "The source may contain real records, but framing can be strategic.", "The dashboard should prevent the reader from silently absorbing it as neutral biography."], ["The adversarial source may be accurate.", "The opposing side may dispute or contextualize it.", "Court filings or primary documents may settle part of the record."], "not_applicable"],
+      ["Chronology / implementation pressure", "orange", "public:timeline", "A safety-warning statement, later product launch, government deployment claim, or regulation proposal may look inconsistent unless placed in a dated timeline with role labels.", [["safety-warning statement", "early posture", "Could be collective, personal, or company-level."], ["later product launch", "implementation layer", "Should be compared with actual safeguards and dates."], ["dated timeline", "review method", "Chronology comes before contradiction."]], ["The same person can hold risk concerns while building products; that is tension, not automatically contradiction.", "The review should ask whether implementation evidence matches the public risk posture.", "This card shows how Tracewright slows reputational judgment."], ["The timeline may reveal a genuine contradiction.", "Product or policy details may resolve the tension.", "External reporting may be incomplete."], "source_texture"]
     ]
   },
   {
@@ -528,7 +528,7 @@ const cases = [
       next_checks: ["Separate attribution evidence from ownership evidence.", "Compare the diary description with the auction catalogue and physical painting.", "Map the 1939-1947 gap before making any title or restitution claim.", "Ask whether the researcher note cites primary documents or repeats family tradition.", "Have a qualified provenance specialist review wartime-risk materials."]
     },
     guide: {
-      texture: { human: 4, machine: 1, total: 5 },
+      texture: { source_texture: 4, mediation_polish: 1, total: 5 },
       lanes: { authorship: 3, claims: 5, disclosure: 4, total: 5, pressure: "High" },
       focus: [
         ["orange", "PR005", "Claim reliability", "Wartime gap", "The file has no direct custody record between 1939 and 1947, so the absence itself must be recorded rather than smoothed over."],
@@ -547,18 +547,18 @@ const cases = [
     messages: [
       ["PR001", "Collector file / object summary", "target", "2026-05-18", "synthetic:collector-file", "The current owner holds a small oil painting known as Woman with a Blue Ribbon, attributed in the file to Elodie Marchand, circa 1772.", ["Current file", "Attribution claim", "Context only until checked"]],
       ["PR002", "Artist record / studio ledger", "target", "1772", "synthetic:studio-ledger", "A studio ledger records a portrait of a young woman with a blue ribbon delivered to a Paris patron, but it does not include dimensions or a later owner.", ["Date anchor", "Attribution boundary"]],
-      ["PR003", "Collector diary", "target", "1849", "synthetic:diary-1849", "A handwritten diary describes buying a small French portrait of a girl with blue ribbon from the de Vries family collection.", ["Ownership clue", "Human source texture"]],
+      ["PR003", "Collector diary", "target", "1849", "synthetic:diary-1849", "A handwritten diary describes buying a small French portrait of a girl with blue ribbon from the de Vries family collection.", ["Ownership clue", "Source-grounded texture"]],
       ["PR004", "Auction catalogue", "target", "1850", "synthetic:auction-1850", "An auction catalogue lists Lot 37 as Portrait of a Young Lady, French school, blue sash, but the dimensions differ from the current painting by several centimeters.", ["Possible match", "Description mismatch"]],
       ["PR005", "Wartime custody file", "target", "1939-1947", "synthetic:wartime-gap", "The dossier has insurance correspondence from 1938 and a gallery receipt from 1948, but no direct record for the war years.", ["Provenance gap", "High attention"]],
       ["PR006", "Researcher note", "target", "1978", "synthetic:research-note", "A researcher wrote that the picture is probably by Marchand, citing an old family list and stylistic comparison, but the family list is not attached.", ["Secondary source", "Citation gap"]],
       ["PR007", "Conservation memo", "target", "2026", "synthetic:conservation-memo", "A conservation memo reports canvas weave and pigment findings consistent with late eighteenth-century French materials.", ["Material anchor", "Not authorship proof"]]
     ],
     evidence: [
-      ["Attribution Boundary", "yellow", "synthetic:studio-ledger", "The ledger records 'portrait of a young woman, blue ribbon, for M. Armand' in 1772, but gives no dimensions, signature reference, or later owner.", [["portrait of a young woman, blue ribbon", "descriptive overlap", "The phrase may align with the present painting but is not unique enough."], ["no dimensions", "missing identifier", "The record cannot yet be tied securely to the object."], ["no later owner", "chain break", "The ledger supports a possible origin, not continuous provenance."]], ["The ledger is an early date anchor but not a full identification.", "The description is plausible yet generic.", "Attribution and ownership history should stay separate."], ["The full ledger may contain adjacent entries.", "A patron archive may identify M. Armand.", "The present painting may be a related work rather than the same object."], "human"],
-      ["Diary / Auction Mismatch", "orange", "synthetic:diary-1849 + synthetic:auction-1850", "The diary says 'a small French portrait of a girl with a blue ribbon'; the auction catalogue lists 'Portrait of a Young Lady, French school, blue sash' with dimensions that differ from the current painting.", [["blue ribbon", "possible continuity", "The motif overlaps with the current file."], ["blue sash", "description drift", "The catalogue wording may refer to a different visual feature."], ["dimensions differ", "material mismatch", "A measurable discrepancy requires checking before linking the records."]], ["The two records may describe the same object imprecisely, but the mismatch is substantive enough to flag.", "The review should compare measurements, frame changes, relining history, and catalogue conventions.", "This is a provenance-link problem, not an authenticity verdict."], ["Old catalogues may round measurements.", "A relining or frame note may explain size changes.", "The diary and auction lot may be different paintings in the same collection."], "none"],
-      ["Wartime Provenance Gap", "red", "synthetic:wartime-gap", "The file moves from a 1938 insurance letter to a 1948 gallery receipt, with no direct custody record during the war years.", [["1938 insurance letter", "pre-gap anchor", "The object appears before the war-period gap."], ["1948 gallery receipt", "post-gap anchor", "The object appears after the gap."], ["no direct custody record", "archival silence", "The missing interval is the key evidence problem."]], ["A wartime gap does not prove wrongdoing, but it is a high-attention provenance issue.", "The gap should be named explicitly rather than hidden under a continuous ownership narrative.", "Qualified provenance review is needed before relying on the chain for title, sale, donation, or publication."], ["Records may have been lost.", "The object may have remained with the same family.", "External archives, customs files, or gallery stock books may close the gap."], "human"],
-      ["Researcher-Note Boundary", "blue", "synthetic:research-note", "The 1978 note says 'probably Marchand' and refers to an old family list, but the list is not attached to the dossier.", [["probably Marchand", "attribution softness", "The researcher uses cautious language."], ["old family list", "missing cited source", "The supporting document is not available in the reviewed file."], ["not attached", "provenance disclosure", "The reviewer should not treat the note as if the primary source were present."]], ["A respected researcher note can be valuable, but its evidentiary weight depends on the cited material.", "The dashboard should preserve the distinction between expert opinion and visible primary evidence.", "The next action is to locate the family list or quote its contents accurately."], ["The researcher may have seen the list directly.", "The list may exist in another archive.", "The attribution may rest more on style than on documentary provenance."], "machine"],
-      ["Material Analysis Anchor", "green", "synthetic:conservation-memo", "Canvas weave, ground layer, and pigment findings are consistent with late eighteenth-century French materials.", [["consistent with", "supporting language", "The memo supports compatibility, not certainty."], ["late eighteenth-century French materials", "date-range support", "Material evidence can support the period claim."], ["pigment findings", "technical anchor", "A physical examination provides a different source layer from written provenance."]], ["Technical findings help test whether the object could belong to the proposed period.", "They do not prove Marchand authorship or uninterrupted ownership.", "This card helps separate material compatibility from narrative provenance."], ["Later artists may use old materials.", "The memo may need full lab data.", "Condition history may affect interpretation."], "human"]
+      ["Attribution Boundary", "yellow", "synthetic:studio-ledger", "The ledger records 'portrait of a young woman, blue ribbon, for M. Armand' in 1772, but gives no dimensions, signature reference, or later owner.", [["portrait of a young woman, blue ribbon", "descriptive overlap", "The phrase may align with the present painting but is not unique enough."], ["no dimensions", "missing identifier", "The record cannot yet be tied securely to the object."], ["no later owner", "chain break", "The ledger supports a possible origin, not continuous provenance."]], ["The ledger is an early date anchor but not a full identification.", "The description is plausible yet generic.", "Attribution and ownership history should stay separate."], ["The full ledger may contain adjacent entries.", "A patron archive may identify M. Armand.", "The present painting may be a related work rather than the same object."], "source_texture"],
+      ["Diary / Auction Mismatch", "orange", "synthetic:diary-1849 + synthetic:auction-1850", "The diary says 'a small French portrait of a girl with a blue ribbon'; the auction catalogue lists 'Portrait of a Young Lady, French school, blue sash' with dimensions that differ from the current painting.", [["blue ribbon", "possible continuity", "The motif overlaps with the current file."], ["blue sash", "description drift", "The catalogue wording may refer to a different visual feature."], ["dimensions differ", "material mismatch", "A measurable discrepancy requires checking before linking the records."]], ["The two records may describe the same object imprecisely, but the mismatch is substantive enough to flag.", "The review should compare measurements, frame changes, relining history, and catalogue conventions.", "This is a provenance-link problem, not an authenticity verdict."], ["Old catalogues may round measurements.", "A relining or frame note may explain size changes.", "The diary and auction lot may be different paintings in the same collection."], "not_applicable"],
+      ["Wartime Provenance Gap", "red", "synthetic:wartime-gap", "The file moves from a 1938 insurance letter to a 1948 gallery receipt, with no direct custody record during the war years.", [["1938 insurance letter", "pre-gap anchor", "The object appears before the war-period gap."], ["1948 gallery receipt", "post-gap anchor", "The object appears after the gap."], ["no direct custody record", "archival silence", "The missing interval is the key evidence problem."]], ["A wartime gap does not prove wrongdoing, but it is a high-attention provenance issue.", "The gap should be named explicitly rather than hidden under a continuous ownership narrative.", "Qualified provenance review is needed before relying on the chain for title, sale, donation, or publication."], ["Records may have been lost.", "The object may have remained with the same family.", "External archives, customs files, or gallery stock books may close the gap."], "source_texture"],
+      ["Researcher-Note Boundary", "blue", "synthetic:research-note", "The 1978 note says 'probably Marchand' and refers to an old family list, but the list is not attached to the dossier.", [["probably Marchand", "attribution softness", "The researcher uses cautious language."], ["old family list", "missing cited source", "The supporting document is not available in the reviewed file."], ["not attached", "provenance disclosure", "The reviewer should not treat the note as if the primary source were present."]], ["A respected researcher note can be valuable, but its evidentiary weight depends on the cited material.", "The dashboard should preserve the distinction between expert opinion and visible primary evidence.", "The next action is to locate the family list or quote its contents accurately."], ["The researcher may have seen the list directly.", "The list may exist in another archive.", "The attribution may rest more on style than on documentary provenance."], "mediation_polish"],
+      ["Material Analysis Anchor", "green", "synthetic:conservation-memo", "Canvas weave, ground layer, and pigment findings are consistent with late eighteenth-century French materials.", [["consistent with", "supporting language", "The memo supports compatibility, not certainty."], ["late eighteenth-century French materials", "date-range support", "Material evidence can support the period claim."], ["pigment findings", "technical anchor", "A physical examination provides a different source layer from written provenance."]], ["Technical findings help test whether the object could belong to the proposed period.", "They do not prove Marchand authorship or uninterrupted ownership.", "This card helps separate material compatibility from narrative provenance."], ["Later artists may use old materials.", "The memo may need full lab data.", "Condition history may affect interpretation."], "source_texture"]
     ]
   }
 ];
@@ -670,23 +670,23 @@ function interpretation() {
       <section class="panel review-guide">
         <div>
           <h3>How To Read This Case</h3>
-          <p class="panel-note">These are evidence-card counts and review cues, not authenticity percentages. Ambiguous cards remain in Evidence for human review.</p>
+          <p class="panel-note">These are evidence-card cue counts, not authorship probabilities or authenticity percentages. They show where a reviewer should inspect source-grounding, mediation, polish, translation, editing, or workflow possibilities.</p>
         </div>
         <div class="guide-layout">
           <div class="attention-panel">
             <h3>Texture Axes</h3>
-            <p class="panel-note">These are evidence-card counts and review cues, not authenticity percentages. Ambiguous cards remain in Evidence for human review.</p>
+            <p class="panel-note">These are evidence-card cue counts, not authorship probabilities or authenticity percentages. Ambiguous cards remain in Evidence for human review.</p>
             <div class="attention-bars">
-              ${bar("Human / source texture", guide.texture.human, guide.texture.total, "anchor")}
-              ${bar("Machine / editorial cleanliness", guide.texture.machine, guide.texture.total, "mediated")}
+              ${bar("Source-grounded texture cues", guide.texture.source_texture, guide.texture.total, "anchor")}
+              ${bar("Mediation / polish cues", guide.texture.mediation_polish, guide.texture.total, "mediated")}
             </div>
             <div class="attention-definitions">
-              <p><strong>Human / source texture:</strong> visible writerly agency, specific source detail, revision traces, hesitation, local judgment, rough edges, or idiosyncratic phrasing.</p>
-              <p><strong>Machine / editorial cleanliness:</strong> automated-synthesis or editorial surface: clean coverage, weak close reading, template flow, fast generalization, or polished prose without visible ownership.</p>
+              <p><strong>Source-grounded texture cues:</strong> visible writerly agency, specific source detail, revision traces, hesitation, local judgment, rough edges, or idiosyncratic phrasing.</p>
+              <p><strong>Mediation / polish cues:</strong> automated-synthesis or editorial surface: clean coverage, weak close reading, template flow, fast generalization, or polished prose without visible ownership.</p>
             </div>
             <div class="texture-evidence-grid">
-              ${textureEvidenceList("Human / source texture evidence", "human")}
-              ${textureEvidenceList("Machine / editorial cleanliness evidence", "machine")}
+              ${textureEvidenceList("Source-grounded texture cue evidence", "source_texture")}
+              ${textureEvidenceList("Mediation / polish cue evidence", "mediation_polish")}
             </div>
             <h3>Review Lanes</h3>
             <p class="panel-note">These counts show what kind of question the evidence cards answer.</p>
@@ -697,9 +697,9 @@ function interpretation() {
               <div class="bar"><span>Review pressure</span><span class="flag ${pressureColor(guide.lanes.pressure)}">${esc(guide.lanes.pressure)}</span><strong></strong></div>
             </div>
             <div class="attention-definitions">
-              <p><strong>Authorship / mediation:</strong> who shaped wording, style, continuity, translation, and final surface.</p>
-              <p><strong>Claim reliability:</strong> whether stated facts, timelines, methods, identities, citations, or content claims need checking.</p>
-              <p><strong>Disclosure / provenance:</strong> explicit or known information about AI use, translation, fiction, edits, source notes, or workflow.</p>
+              <p><strong>Authorship / mediation:</strong> how wording, style, continuity, translation, editing, or final surface may have been shaped. This is not a finding about who wrote the material.</p>
+              <p><strong>Claim reliability:</strong> whether stated facts, timelines, methods, identities, citations, or content claims need checking. This is not a judgment of the person.</p>
+              <p><strong>Disclosure / provenance:</strong> explicit or known information about AI use, translation, fiction, edits, source notes, or workflow. This is not confession or guilt.</p>
             </div>
             <div class="guide-actions">
               <button class="text-button" data-view="evidence">Open Evidence</button>
@@ -714,7 +714,7 @@ function interpretation() {
               ${legend("yellow", "Observe", "Weak or ambiguous signal; keep watching.")}
               ${legend("blue", "Mediated layer", "Translation, AI polish, workflow, or layer separation.")}
               ${legend("orange", "Review", "Meaning shift, weak support, strong tool involvement, or boundary issue.")}
-              ${legend("red", "High attention", "Known heavy AI composition, major mismatch, or severe claim problem.")}
+              ${legend("red", "High attention", "Requires careful human review before use. This does not mean guilty, false, or AI-generated.")}
             </div>
           </div>
         </div>
@@ -796,20 +796,20 @@ function textureEvidenceList(title, axis) {
 }
 
 function textureAxis(card) {
-  if (card[7] === "human" || card[7] === "machine") return card[7];
-  if (card[7] === "none") return "none";
+  if (card[7] === "source_texture" || card[7] === "mediation_polish") return card[7];
+  if (card[7] === "not_applicable") return "not_applicable";
   const text = `${card[0]} ${card[3]}`.toLowerCase();
-  const human = /human texture|source-backed|domain authorship|specificity|non-native|rough|idiosyncratic/.test(text);
-  const machine = /editorial polish|machine|polished|generalization|template|smooth/.test(text);
-  if (human && !machine) return "human";
-  if (machine && !human) return "machine";
-  return "none";
+  const sourceTexture = /writer\/source texture|source-grounded|source-backed|domain authorship|specificity|non-native|rough|idiosyncratic/.test(text);
+  const mediationPolish = /editorial polish|mediation|polished|generalization|template|smooth/.test(text);
+  if (sourceTexture && !mediationPolish) return "source_texture";
+  if (mediationPolish && !sourceTexture) return "mediation_polish";
+  return "not_applicable";
 }
 
 function textureAxisBadge(card) {
   const axis = textureAxis(card);
-  if (axis === "human") return `<span class="texture-badge yellow">Human / source texture - ${card[7] ? "explicit" : "inferred"}</span>`;
-  if (axis === "machine") return `<span class="texture-badge blue">Machine / editorial cleanliness - ${card[7] ? "explicit" : "inferred"}</span>`;
+  if (axis === "source_texture") return `<span class="texture-badge yellow">Source-grounded texture cue - ${card[7] ? "explicit" : "inferred"}</span>`;
+  if (axis === "mediation_polish") return `<span class="texture-badge blue">Mediation / polish cue - ${card[7] ? "explicit" : "inferred"}</span>`;
   return "";
 }
 
@@ -863,8 +863,8 @@ function claimColor(label) {
 
 function evidence() {
   const current = item();
-  $("#evidence").innerHTML = `<div class="stack">${current.evidence.map((card) => `
-    <article class="card body" id="${esc(evidenceId(current.evidence.indexOf(card)))}" data-evidence-card="${esc(evidenceId(current.evidence.indexOf(card)))}">
+  $("#evidence").innerHTML = `<div class="stack">${current.evidence.map((card, index) => `
+    <article class="card body" id="${esc(evidenceId(index))}" data-evidence-card="${esc(evidenceId(index))}">
       <div class="header">
         <div><span class="tag">${esc(card[2])}</span><h3>${esc(card[0])}</h3></div>
         <div class="flag-row">
@@ -943,6 +943,9 @@ render();
 </script>
 </body>
 </html>
+
+
+
 
 
 

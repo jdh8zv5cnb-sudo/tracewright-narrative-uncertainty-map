@@ -58,6 +58,9 @@ This path is for Codex users, local HTML/JSON users, or people who want to conve
 - `DASHBOARD_BUILDER_GUIDE.md`  
   Instructions for users who want to adapt the dashboard or structured data.
 
+- `LICENSE.md`  
+  Non-commercial Starter Kit license summary.
+
 - `dashboard/index.html`  
   A static synthetic demo dashboard.
 

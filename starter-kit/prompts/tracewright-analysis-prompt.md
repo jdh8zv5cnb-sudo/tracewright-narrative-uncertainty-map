@@ -1,4 +1,4 @@
-# Tracewright Analysis Prompt
+﻿# Tracewright Analysis Prompt
 
 Use this prompt with your own AI assistant when preparing material for a Tracewright-style review map.
 
@@ -72,7 +72,7 @@ For each important observation, create an evidence card with:
 - reasoning chain
 - alternative explanations
 - next action
-- texture axis if relevant: Human/source texture, Machine/editorial cleanliness, or none
+- texture axis if relevant: Source-grounded texture cues, Mediation / polish cues, or none
 
 5. Interpretation Guide Notes
 Explain how a human reviewer should read the case without turning the map into a verdict.
@@ -90,3 +90,4 @@ Rules:
 - Do not treat rough prose as proof of human authorship.
 - If the review could affect employment, legal, academic, reputational, provenance, publication, or financial decisions, say that qualified human review is required.
 ```
+

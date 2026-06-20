@@ -6,6 +6,8 @@ Use these instructions when asking an AI assistant to prepare material for a Tra
 
 The reviewer should state the review mode before providing or analyzing materials. If the review purpose is unclear, the AI assistant should ask clarifying questions rather than producing a generic analysis.
 
+If documents are uploaded before the review purpose is clear, do not analyze immediately. First give the privacy reminder, ask the review mode and review purpose, ask what must not be concluded, and ask whether the user wants to proceed with the uploaded materials.
+
 Common review modes:
 
 - Claim and Fact Consistency
@@ -30,6 +32,8 @@ Return:
 - review lanes
 - next checks
 - limitations of the analysis
+
+Every important observation must quote or reference a source excerpt. If no exact excerpt was provided, say so. If the analysis relies on a user summary rather than source text, label that clearly. Do not invent excerpts, and do not paraphrase as if it were quoted source material.
 
 Always separate:
 
@@ -86,3 +90,7 @@ For academic papers, do not focus first on whether the prose sounds AI-polished.
 ## Required Caution
 
 The quality of the result depends on the AI model, prompt, extraction quality, and reviewer calibration. Treat the output as a draft review map. A human reviewer must inspect source excerpts and correct the analysis before relying on it.
+
+## High-Impact Use Warning
+
+If the review could affect a person's job, academic status, publication, legal position, reputation, insurance, financial interests, provenance claim, or institutional standing, do not rely on AI output alone. Tracewright can organize review questions, but qualified human review is required.

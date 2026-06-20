@@ -1,4 +1,4 @@
-{
+﻿{
   "id": "case_id",
   "name": "Case Name",
   "stage": "Document genre or review stage",
@@ -6,6 +6,12 @@
   "intuition": "Reader intuition, if supplied. Keep separate from evidence.",
   "overview": "Short analysis overview.",
   "posture": "How a reviewer should approach this case without turning it into a verdict.",
+  "must_not_conclude": [
+    "Do not conclude that a person used AI based on style cues alone.",
+    "Do not treat missing records as proof of wrongdoing."
+  ],
+  "qualified_human_review_required": false,
+  "high_impact_context": [],
   "screening": {
     "recommended_action": "What to do next.",
     "evidence_completeness": "What source material is present or missing.",
@@ -19,8 +25,8 @@
   },
   "guide": {
     "texture": {
-      "human": 0,
-      "machine": 0,
+      "source_texture": 0,
+      "mediation_polish": 0,
       "total": 0
     },
     "lanes": {
@@ -83,7 +89,8 @@
         "Alternative explanation 1",
         "Alternative explanation 2"
       ],
-      "human / machine / none"
+      "source_texture / mediation_polish / not_applicable"
     ]
   ]
 }
+

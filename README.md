@@ -14,7 +14,7 @@ It can also be used to improve human-written work: clarifying arguments, extract
   https://ayakoredon.github.io/tracewright-narrative-uncertainty-map/simple-ai-example.html
 
 - **Download the Starter Kit:**  
-  https://ayakoredon.github.io/tracewright-narrative-uncertainty-map/downloads/tracewright-narrative-starter-kit-v0.5.zip
+  https://ayakoredon.github.io/tracewright-narrative-uncertainty-map/downloads/tracewright-narrative-starter-kit-v0.6.zip
 
 <sub>Japanese guide / 日本語ガイド: https://github.com/ayakoredon/tracewright-narrative-uncertainty-map/blob/main/README.ja.md</sub>
 
@@ -24,6 +24,8 @@ It can also be used to improve human-written work: clarifying arguments, extract
   https://ayakoredon.github.io/tracewright-narrative-uncertainty-map/
 
 **License / commercial use:** free for personal, educational, research, and other non-commercial use. Commercial use, resale, hosted commercial services, or product integration require prior written permission. See `LICENSE` and `COMMERCIAL_USE.md`.
+
+This repository is publicly visible, but commercial use is not granted by default.
 
 ## Use It When You Want To Ask
 
@@ -43,7 +45,7 @@ You can use the Starter Kit with an AI assistant you already have, including fre
 
 **Download the Starter Kit:**
 
-https://ayakoredon.github.io/tracewright-narrative-uncertainty-map/downloads/tracewright-narrative-starter-kit-v0.5.zip
+https://ayakoredon.github.io/tracewright-narrative-uncertainty-map/downloads/tracewright-narrative-starter-kit-v0.6.zip
 
 After unzipping it, open `START_HERE.md`. For the easiest path, attach `USE_THIS_WITH_YOUR_AI.md` to your AI assistant and paste the short starter message. The AI should then check file safety, ask what kind of review you want, and guide the next step.
 
@@ -121,6 +123,15 @@ For commercial collaboration, licensing, institutional use, or product integrati
 
 See `LICENSE` and `COMMERCIAL_USE.md`.
 
+## Safety Docs
+
+- `FAQ.md`: common questions and boundaries.
+- `docs/misuse-examples.md`: unsafe uses and safer reframings.
+- `docs/safe-use-cases.md`: practical review scenarios.
+- `docs/schema.md`: data structure notes for builders.
+- `SECURITY.md`: do not post private review materials in public issues.
+- `CONTRIBUTING.md`: contribution principles.
+
 ## Demo
 
 Open the live dashboard demo here:
@@ -129,7 +140,7 @@ https://ayakoredon.github.io/tracewright-narrative-uncertainty-map/
 
 You can also open `index.html` locally in a browser. The same demo is available at `demo/index.html`.
 
-The demo uses synthetic review materials only. The cases are designed to show how stable human texture, cross-language influence, editorial polish, source grounding, and claim reliability can be separated during review. The Summary tab gives a short triage view, while the Interpretation Guide explains how to read review lanes, texture axes, evidence cards, source roles, and escalation rules without turning them into detector scores.
+The demo uses synthetic review materials only. The cases are designed to show how source-grounded texture cues, cross-language influence, editorial polish, source grounding, and claim reliability can be separated during review. The Summary tab gives a short triage view, while the Interpretation Guide explains how to read review lanes, texture axes, evidence cards, source roles, and escalation rules without turning them into detector scores.
 
 The demo includes several document genres: personal correspondence, mixed AI/editorial writing, institutional newsletter-style prose, academic paper review, public narrative dossiers, and art-provenance review. These genres should not be reviewed with identical prompts or assumptions.
 
@@ -139,7 +150,7 @@ For the non-dashboard workflow, see `simple-ai-example.html`. It shows a reconst
 
 Download the local starter kit here:
 
-https://ayakoredon.github.io/tracewright-narrative-uncertainty-map/downloads/tracewright-narrative-starter-kit-v0.5.zip
+https://ayakoredon.github.io/tracewright-narrative-uncertainty-map/downloads/tracewright-narrative-starter-kit-v0.6.zip
 
 The starter kit includes two entry paths:
 
@@ -232,8 +243,16 @@ Evidence Cards are observation cards, not suspicion cards. They should never be 
 - `docs/methodology.md`: method and review model.
 - `docs/ai-analysis-instructions.md`: prompt guidance for local AI-assisted analysis.
 - `docs/ethics.md`: privacy, consent, and misuse boundaries.
+- `docs/misuse-examples.md`: misuse examples and safer reframings.
+- `docs/safe-use-cases.md`: safe practical use cases.
+- `docs/schema.md`: data structure notes.
+- `FAQ.md`: common questions.
+- `CONTRIBUTING.md`: contribution principles.
+- `SECURITY.md`: private-material warning for public GitHub participation.
 - `LICENSE`: source-available non-commercial license.
 - `COMMERCIAL_USE.md`: plain-language commercial-use summary.
+
+
 
 
 

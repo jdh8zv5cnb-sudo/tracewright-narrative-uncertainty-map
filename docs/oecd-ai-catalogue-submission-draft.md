@@ -12,7 +12,7 @@ https://ayakoredon.github.io/tracewright-narrative-uncertainty-map/
 
 Starter kit download:
 
-https://ayakoredon.github.io/tracewright-narrative-uncertainty-map/downloads/tracewright-narrative-starter-kit-v0.5.zip
+https://ayakoredon.github.io/tracewright-narrative-uncertainty-map/downloads/tracewright-narrative-starter-kit-v0.6.zip
 
 GitHub repository:
 
@@ -62,7 +62,7 @@ Tracewright Narrative Uncertainty Map helps reviewers inspect AI-mediated or mix
 
 Tracewright Narrative Uncertainty Map is a public prototype and review framework for reading narrative materials more carefully in an AI-mediated information environment. It was developed from the observation that the central question is often not simply whether a text was written by a human or by AI, but what can be trusted, what needs checking, what changed over time, which source said what, and what action a responsible reviewer should take next.
 
-The tool organizes a document set into review materials, claims, evidence cards, source roles, timeline entries, disclosure/provenance notes, and follow-up actions. It separates several review lanes that are often collapsed in ordinary reading: authorship or mediation, claim reliability, and disclosure or provenance. It also distinguishes human/source texture from machine/editorial cleanliness as review cues, not as authenticity probabilities.
+The tool organizes a document set into review materials, claims, evidence cards, source roles, timeline entries, disclosure/provenance notes, and follow-up actions. It separates several review lanes that are often collapsed in ordinary reading: authorship or mediation, claim reliability, and disclosure or provenance. It also distinguishes Source-grounded texture cues from Mediation / polish cues as review cues, not as authenticity probabilities.
 
 Tracewright is not an AI detector and does not produce a verdict about a person or text. Its goal is to slow premature judgment and support accountable human review. A reviewer can use it to inspect correspondence, public statements, institutional publications, academic drafts, art-provenance files, historical records, or other mixed narrative dossiers. It is especially useful when materials have different authors, dates, roles, levels of editorial intervention, or evidence quality.
 
@@ -90,7 +90,7 @@ https://ayakoredon.github.io/tracewright-narrative-uncertainty-map/
 
 Starter kit download:
 
-https://ayakoredon.github.io/tracewright-narrative-uncertainty-map/downloads/tracewright-narrative-starter-kit-v0.5.zip
+https://ayakoredon.github.io/tracewright-narrative-uncertainty-map/downloads/tracewright-narrative-starter-kit-v0.6.zip
 
 GitHub repository of the tool:
 
@@ -315,6 +315,8 @@ Avoid screenshots that suggest:
 ## Final Safety Sentence to Include if Space Allows
 
 Tracewright is designed to help reviewers ask better questions before making decisions; it should not be used as an automated detector, enforcement mechanism, or substitute for qualified human review.
+
+
 
 
 

@@ -12,6 +12,9 @@ If you only want your AI assistant to review documents and produce a Markdown re
 - `templates/case-data-template.json`  
   A structured case-data template showing the fields used by the dashboard.
 
+- `docs/schema.md`  
+  Field notes for builders, including evidence card array positions, review lanes, cue categories, posture labels, and what should not be interpreted as a score.
+
 - `prompts/tracewright-analysis-prompt.md`  
   A reusable prompt for asking an AI assistant to prepare a Tracewright-style review map.
 
@@ -42,7 +45,8 @@ If you only want your AI assistant to review documents and produce a Markdown re
 5. Challenge the first output with `prompts/refinement-feedback-prompt.md`.
 6. Review and correct the AI output manually.
 7. Convert the result into structured data using `templates/case-data-template.json`.
-8. Adapt `dashboard/index.html` or build your own interface around the same concepts.
+8. Check `docs/schema.md` before editing the data shape.
+9. Adapt `dashboard/index.html` or build your own interface around the same concepts.
 
 ## What To Preserve In A Custom Dashboard
 
